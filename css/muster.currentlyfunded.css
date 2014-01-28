@@ -29,13 +29,13 @@
   margin: 0;
 }
 
-/*#currentlyFunded thead tr {
-  background: #69c;
-  color: white;
-  text-shadow:
+#currentlyFunded thead tr {
+  /*background: #69c;*/
+  color: black;
+  /*text-shadow:
     0 -1px 1px rgba(0, 0, 0, 0.3),
-    0 1px 1px rgba(0, 0, 0, 0.2);
-}*/
+    0 1px 1px rgba(0, 0, 0, 0.2);*/
+}
 
 #currentlyFunded tbody tr:nth-child(4n-1), tr:nth-child(4n) {
   background: #eee;
