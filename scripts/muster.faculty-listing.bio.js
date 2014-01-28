@@ -232,13 +232,7 @@
 			],
 			[
 				'',
-				function(){
-					if(person.working_title !== null){
-						'-' + person.working_title
-					}else if(person.title !== null){
-						'-' + person.title
-					}else{}
-				}
+				'-' + person.working_title
 			],
 			[
 				'',
