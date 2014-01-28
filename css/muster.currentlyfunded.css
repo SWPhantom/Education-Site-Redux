@@ -51,10 +51,6 @@
   padding: 0.5em 1em;
 }
 
-#currentlyFunded th[class="muster_sortable"] {
-  cursor: pointer;
-}
-
 #currentlyFunded th {
   font-family: sans-serif;
 }
@@ -124,6 +120,6 @@
   border-top: 3px solid #069;
 }
 
-#currentlyFunded td[colspan="2"] {
-  padding: 0px;
+#currentlyFunded td[colspan=2] {
+  padding: 0 1em;
 }
