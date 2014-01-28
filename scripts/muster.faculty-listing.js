@@ -230,7 +230,7 @@
 		});
 
 		$.each(this.serializeBy('id').results, function () {
-			var person, pic, name, link, title;
+			var person, pic, name, link, working_title;
 
 			person = $('<div class=person></div>');
 
@@ -242,7 +242,7 @@
 			/*jslint regexp: true */
 			pic = $(IMG
 				.replace('%s', (this.first_name + this.last_name).toLowerCase().replace(/[^a-z]/g, ''))
-				.replace('%s', this.title)
+				.replace('%s', this.working_title)
 				.replace('%s', this.first_name)
 				.replace('%s', this.last_name));
 			/*jslint regexp: false */
@@ -257,12 +257,12 @@
 				.replace('%s', this.first_name)
 				.replace('%s', this.last_name));
 
-			title = $('<h4>' + this.title + '</h4>');
+			working_title = $('<h4>' + this.working_title + '</h4>');
 
 			// insert picture into link before text
 			name.find('a').prepend(pic);
 
-			person.append(name).append(title).click(function (event) {
+			person.append(name).append(working_title).click(function (event) {
 
 				var href = $(this).find('a').attr('href');
 
