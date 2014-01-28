@@ -1,3 +1,9 @@
 #musterInfoContent dd {
 	margin-left: 0;
 }
+h1 {}
+h1#page-title ["bio"]{
+  margin: 20px 0;
+  font-size: 0%;
+  line-height: 1.2em;
+}
