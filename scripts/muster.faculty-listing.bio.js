@@ -228,11 +228,17 @@
 		[
 			[
 				'',
-				'-' + person.first_name + ' ' + person.last_name
+				person.first_name + ' ' + person.last_name
 			],
 			[
 				'',
-				'-' + person.title
+				function(){
+					if(person.working_title !== null){
+						'-' + person.working_title
+					}else if(person.title !== null){
+						'-' + person.title
+					}else{}
+				}
 			],
 			[
 				'',
@@ -252,7 +258,7 @@
 			],
 			[
 				'',
-				'-' + phone(person.phone)
+				phone(person.phone)
 			],
 			[
 				'',
