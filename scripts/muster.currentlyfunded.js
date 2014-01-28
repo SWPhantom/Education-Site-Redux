@@ -31,7 +31,7 @@
 	// <a href=...first=first&last=last>last, first</a>
 	function bioLink(last, first) {
 		var link = $('<a>').attr('href', [
-			'http://education.ucsb.edu/research-faculty/bio?',
+			'/research-faculty/bio?',
 			'first=' + first,
 			'&last=' + last
 		].join(''));

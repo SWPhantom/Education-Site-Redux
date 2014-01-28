@@ -13,7 +13,7 @@
 	'use strict';
 
 	var name, dept, spec, keyw, fieldset, people, departments, form, show, reset,
-		BIO_LINK = 'http://education.ucsb.edu/research-faculty/bio?first=%s&last=%s';
+		BIO_LINK = '/research-faculty/bio?first=%s&last=%s';
 
 	// Add String.trim method for clients that don't have it
 	// 
