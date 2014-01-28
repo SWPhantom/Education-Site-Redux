@@ -2,7 +2,7 @@
 	margin-left: 0;
 }
 header > h1#page-title {
-  margin: 20px 0;
+  margin: 0px 0;
   font-size: 0%;
-  line-height: 1.2em;
+  line-height: 0em;
 }
