@@ -453,12 +453,12 @@
 		where: "active = 'yes' and first_name = '%s' and last_name = '%s'".replace(/%s/, args.first).replace(/%s/, args.last)
 	}, function () {
 		this.toTable(
-      [
-        person.first_name + ' ' + person.last_name,
-        person.title,
-        
-   		], '#musterInfoContent') // Target container for table (<div id="currentlyFunded"></div>)
-  });
+			[
+				person.first_name + ' ' + person.last_name,
+				person.title,
+				
+	 		], '#musterInfoContent') // Target container for table (<div id="currentlyFunded"></div>)
+	});
 */
 		////XXX END OF TEST==========================================================================================
 

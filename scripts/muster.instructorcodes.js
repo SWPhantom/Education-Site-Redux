@@ -11,12 +11,12 @@
 
 /*
  *	Output:
- *   ______________________ ________________
- *		|Instructor            | Code           |
+ *	 ______________________ ________________
+ *		|Instructor						| Code					 |
  *	 	 ______________________ ________________
- *		|Doe, Jane             | ED199          |
- *   ______________________ ________________
- *  |Deer, John            | CNSP440        |
+ *		|Doe, Jane						 | ED199					|
+ *	 ______________________ ________________
+ *	|Deer, John						| CNSP440				|
  *					.
  *					.
  *					.
@@ -24,51 +24,51 @@
 
 (function ($) {
 
-  'use strict';
+	'use strict';
 
-  muster('ggsedb').query({
-    select: 'id, first_name, last_name, instructor_code',
-    from: 'profile',
-    where: 'instructor_code is not null',
-    order: 'last_name asc'
-  }, function () {
-    this.toTable(
-      [
-        [
-          'Instructor',
+	muster('ggsedb').query({
+		select: 'id, first_name, last_name, instructor_code',
+		from: 'profile',
+		where: 'instructor_code is not null',
+		order: 'last_name asc'
+	}, function () {
+		this.toTable(
+			[
+				[
+					'Instructor',
 			function () {
-              return $('<a>').attr(
-                'href',
-                [
-                  'http://education.ucsb.edu/research-faculty/bio?first=',
-                  this.first_name,
-                  '&last=',
-                  this.last_name
-                ].join('')
-              ).text([this.last_name, this.first_name].join(', '));
-            }
-            /*
-          function () {
-            var html, dl;
-            html = $('<div>'); // wrap it for appending
-            html.append(this.last_name + ', ' + this.first_name);
-            return html.html(); // unwrap it
-          }
-        */
-        ],
+							return $('<a>').attr(
+								'href',
+								[
+									'http://education.ucsb.edu/research-faculty/bio?first=',
+									this.first_name,
+									'&last=',
+									this.last_name
+								].join('')
+							).text([this.last_name, this.first_name].join(', '));
+						}
+						/*
+					function () {
+						var html, dl;
+						html = $('<div>'); // wrap it for appending
+						html.append(this.last_name + ', ' + this.first_name);
+						return html.html(); // unwrap it
+					}
+				*/
+				],
 
-      [
-        'Code',
+			[
+				'Code',
 
-        function () {
-          var html, dl;
-          html = $('<div>'); // wrap it for appending
-          html.append(this.instructor_code || null);
-          return html.html(); // unwrap it
-        }
-      ]
-    ], '#facultyInstructorCodes') // Target container for table (<div id="currentlyFunded"></div>)
-  });
+				function () {
+					var html, dl;
+					html = $('<div>'); // wrap it for appending
+					html.append(this.instructor_code || null);
+					return html.html(); // unwrap it
+				}
+			]
+		], '#facultyInstructorCodes') // Target container for table (<div id="currentlyFunded"></div>)
+	});
 }(jQuery));
 
 
