@@ -1,0 +1,78 @@
+#facultyListing {
+  color: #333;
+  font-family: sans-serif;
+  font-size: 0.7em;
+  overflow: auto;
+  padding: 1.5em 0;
+}
+
+#facultyListing label {
+  display: block;
+  width: 350px;
+  margin: auto;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#facultyListing select {
+  margin-top: 0.7em;
+}
+
+
+#facultyListing .person {
+  float: left;
+  margin: 1em;
+/*  border: 1px solid #999;*/
+/*  border-radius: 7px;*/
+  padding: 2px;
+  /*box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);*/
+  height: 240px;
+  width: 12em;
+  cursor: pointer;
+}
+
+
+#facultyListing .person:active {
+  box-shadow: none;
+}
+
+#facultyListing h3, #facultyListing h4 {
+  margin: 1em 0 0 0;
+  text-align: center;
+}
+
+#facultyListing h4 {
+  margin: 0.2em 0 0 0;
+  font-size: 11px;
+}
+
+#facultyListing h3 a {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#facultyListing a {
+  text-decoration: none;
+  color: #036;
+}
+
+#facultyListing a:visited {
+  color: #707;
+}
+
+#facultyListing img {
+  display: block;
+  margin: auto;
+  max-width: 100px;
+  width: 100px;
+  border: 1px solid #333;
+  margin-bottom: 1em;
+}
+
+#facultyListing img[src*=placeholder] {
+  opacity: 0.2;
+}
+
+#centerColumnContent {
+	padding-bottom:2em;
+}

@@ -1,0 +1,122 @@
+#currentlyFunded {
+  font-size: 0.85em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#currentlyFunded table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  clear: both;
+}
+
+#currentlyFunded>a {
+  font-weight: bold;
+  display: block;
+  float: right;
+  clear: both;
+  text-align: right;
+  text-decoration: none;
+  outline-style: none;
+  color: #333;
+}
+
+#currentlyFunded table a, #currentlyFunded h3 {
+  text-decoration: none;
+  color: #036;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+  margin: 0;
+}
+
+#currentlyFunded thead tr {
+  background: #69c;
+  color: white;
+  text-shadow:
+    0 -1px 1px rgba(0, 0, 0, 0.3),
+    0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+#currentlyFunded tbody tr:nth-child(4n-1), tr:nth-child(4n) {
+  background: #eee;
+}
+
+#currentlyFunded tbody td>dl {
+  border-top: 1px solid #ddd;
+  margin-top: 0;
+}
+
+#currentlyFunded td {
+  min-width: 8em;
+  padding: 0.5em 1em;
+}
+
+#currentlyFunded th {
+  font-family: sans-serif;
+}
+
+#currentlyFunded dt {
+  font-weight: bold;
+}
+
+#currentlyFunded tbody tr:nth-child(even) td {
+  padding: 0;
+  margin: 0;
+}
+
+#currentlyFunded tbody tr:nth-child(even) dl {
+  padding: 1em 2em;
+  overflow: auto;
+}
+
+#currentlyFunded dd, #currentlyFunded dt {
+  float: left;
+}
+
+#currentlyFunded dd {
+  margin-left: 0.5em;
+}
+
+#currentlyFunded dt.yearEnd {
+  margin-left: 3em;
+}
+
+#currentlyFunded .amount {
+  float: right;
+}
+
+#currentlyFunded dt.amount {
+  margin-right: 6em;
+}
+
+#currentlyFunded dd.amount {
+  clear: right;
+  margin-top: -1.2em;
+}
+
+#currentlyFunded .sponsor, #currentlyFunded .abstract {
+  margin-top: 1em;
+}
+
+#currentlyFunded dt.sponsor, #currentlyFunded .abstract {
+  clear: both;
+}
+
+#currentlyFunded dd.abstract {
+  white-space: pre-wrap;
+}
+
+#currentlyFunded th {
+  border-top: 3px solid #69c;
+  border-bottom: 3px solid #69c;
+  cursor: pointer;
+}
+
+#currentlyFunded .sorted {
+  border-bottom: 3px solid #069;
+}
+
+#currentlyFunded .rsorted {
+  border-top: 3px solid #069;
+}
+
