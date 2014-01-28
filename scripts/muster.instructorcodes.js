@@ -40,7 +40,7 @@
 							return $('<a>').attr(
 								'href',
 								[
-									'http://education.ucsb.edu/research-faculty/bio?first=',
+									'/research-faculty/bio?first=',
 									this.first_name,
 									'&last=',
 									this.last_name
