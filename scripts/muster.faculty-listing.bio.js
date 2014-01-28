@@ -82,13 +82,13 @@
 	function departmentLink(dept) {
 		var depts = {
 
-				'Department of Education':
+				'-Department of Education':
 					'/education',
 
-				'Department of Counseling, Clinical & School Psychology':
+				'-Department of Counseling, Clinical & School Psychology':
 					'/ccsp',
 
-				'Teacher Education Program':
+				'-Teacher Education Program':
 					'/tep'
 			};
 
@@ -228,13 +228,11 @@
 		[
 			[
 				'',
-				person.first_name + ' ' + person.last_name
-				//function(){''}
+				'-' + person.first_name + ' ' + person.last_name
 			],
 			[
 				'',
-				person.title
-				//function(){''}
+				'-' + person.title
 			],
 			[
 				'',
@@ -243,29 +241,22 @@
 			[
 				'',
 				[
-					link(person.personal_website, 'Personal Website'),
-					link(person.group_research_website, 'Group Research Website'),
-					link(person.vitae, 'Vitae')
+					link(person.personal_website, '-Personal Website'),
+					link(person.group_research_website, '-Group Research Website'),
+					link(person.vitae, '-Vitae')
 				]
 			],
 			[
 				'',
-				person.office_room_number
-				//function(){''}
+				'-' + person.office_room_number
 			],
 			[
 				'',
-				phone(person.phone)
-				//function(){''}
+				'-' + phone(person.phone)
 			],
 			[
 				'',
-				phone(person.fax)
-				//function(){''}
-			],
-			[
-				'',
-				link('mailto:' + person.email, person.email)
+				link('mailto:' + person.email, '-' + person.email)
 			]
 		], function () {
 			addDefinition(dl, this);
