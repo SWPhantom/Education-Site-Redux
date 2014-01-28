@@ -1,7 +1,7 @@
-#currentlyFunded {
+/*#currentlyFunded {
   font-size: 0.85em;
   font-family: Arial, Helvetica, sans-serif;
-}
+}*/
 
 #currentlyFunded table {
   border-spacing: 0;
@@ -17,12 +17,12 @@
   text-align: right;
   text-decoration: none;
   outline-style: none;
-  color: #333;
+  /*color: #333;*/
 }
 
 #currentlyFunded table a, #currentlyFunded h3 {
   text-decoration: none;
-  color: #036;
+  /*color: #036;*/
   font-weight: bold;
   font-size: 13px;
   cursor: pointer;
@@ -32,9 +32,9 @@
 #currentlyFunded thead tr {
   background: #69c;
   color: white;
-  text-shadow:
+  /*text-shadow:
     0 -1px 1px rgba(0, 0, 0, 0.3),
-    0 1px 1px rgba(0, 0, 0, 0.2);
+    0 1px 1px rgba(0, 0, 0, 0.2);*/
 }
 
 #currentlyFunded tbody tr:nth-child(4n-1), tr:nth-child(4n) {
@@ -52,7 +52,7 @@
 }
 
 #currentlyFunded th {
-  font-family: sans-serif;
+  /*font-family: sans-serif;*/
 }
 
 #currentlyFunded dt {
