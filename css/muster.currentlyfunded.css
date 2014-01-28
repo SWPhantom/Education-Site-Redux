@@ -120,6 +120,6 @@
   border-top: 3px solid #069;
 }
 
-#currentlyFunded td[colspan=2] {
-  padding: 0 1em;
+#currentlyFunded td[colspan="2"] {
+  padding: 0px;
 }
