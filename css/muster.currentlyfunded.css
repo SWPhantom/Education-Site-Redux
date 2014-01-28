@@ -51,6 +51,10 @@
   padding: 0.5em 1em;
 }
 
+#currentlyFunded th[class="muster_sortable"] {
+  cursor: pointer;
+}
+
 #currentlyFunded th {
   font-family: sans-serif;
 }
