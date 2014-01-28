@@ -254,7 +254,7 @@
 			],
 			[
 				'',
-				'-' + person.office_room_number
+				person.office_room_number
 			],
 			[
 				'',
@@ -262,7 +262,7 @@
 			],
 			[
 				'',
-				link('mailto:' + person.email, '-' + person.email)
+				link('mailto:' + person.email, person.email)
 			]
 		], function () {
 			addDefinition(dl, this);
@@ -281,7 +281,7 @@
 
 		column
 			.append($('<h1 class=header></h1>').text(person.first_name + ' ' + person.last_name))
-			.append($('<h3 class=Paltino14pxBlackBold></h3>').text(person.title + ', ' + person.education))
+			.append($('<h3 class=Paltino14pxBlackBold></h3>').text(person.working_title + ', ' + person.education))
 			.append(dl);
 
 		$.each(
