@@ -14,7 +14,7 @@
 	'use strict';
 
 	var people,
-		LINK = "http://education.ucsb.edu/research-faculty/bio?first=%s&last=%s",
+		LINK = "/research-faculty/bio?first=%s&last=%s",
 		NAME = '<h3><a href="%s">%s <span class=surname>%s</span></a></h3>',
 		IMG = '<img src="http://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/%s.jpg" alt="%s %s %s"/>';
 
