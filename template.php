@@ -86,20 +86,20 @@ function ggse_preprocess_node(&$vars) {
 		drupal_add_js(drupal_get_path('theme', 'ggse') . '/scripts/muster.faculty-listing.js');
 		drupal_add_css(drupal_get_path('theme', 'ggse').'/css/muster.faculty-listing.css');
 	}else if(arg(0) == 'node' && arg(1) == '670' && arg(3) == null){//Faculty Bio Page
-                drupal_add_js('https://apps.education.ucsb.edu/muster/muster.js', 'external');
-                drupal_add_js(drupal_get_path('theme', 'ggse') . '/scripts/muster.faculty-listing.bio.js');
+		drupal_add_js('https://apps.education.ucsb.edu/muster/muster.js', 'external');
+		drupal_add_js(drupal_get_path('theme', 'ggse') . '/scripts/muster.faculty-listing.bio.js');
 		drupal_add_css(drupal_get_path('theme', 'ggse').'/css/muster.faculty-listing.bio.css');
-        }else if(arg(0) == 'node' && arg(1) == '492' && arg(3) == null){//Faculty Expertise Page
+	}else if(arg(0) == 'node' && arg(1) == '492' && arg(3) == null){//Faculty Expertise Page
 		drupal_add_js('https://apps.education.ucsb.edu/muster/muster.js', 'external');
 		drupal_add_js(drupal_get_path('theme', 'ggse') . '/scripts/muster.faculty-expertise-search.js');
 	}else if(arg(0) == 'node' && arg(1) == '593' && arg(3) == null){//Currently Funded Page
 		drupal_add_js('https://apps.education.ucsb.edu/muster/muster.js', 'external');
 		drupal_add_js(drupal_get_path('theme', 'ggse') . '/scripts/muster.currentlyfunded.js');
-		//drupal_add_css(drupal_get_path('theme', 'ggse').'/css/muster.currentlyfunded.css');
+		drupal_add_css(drupal_get_path('theme', 'ggse').'/css/muster.currentlyfunded.css');
 	}else if(arg(0) == 'node' && arg(1) == '642' && arg(3) == null){//Instructor Codes Page
-                drupal_add_js('https://apps.education.ucsb.edu/muster/muster.js', 'external');
-                drupal_add_js(drupal_get_path('theme', 'ggse') . '/scripts/muster.instructorcodes.js');
-        }
+		drupal_add_js('https://apps.education.ucsb.edu/muster/muster.js', 'external');
+		drupal_add_js(drupal_get_path('theme', 'ggse') . '/scripts/muster.instructorcodes.js');
+	}
 }
 // */
 
