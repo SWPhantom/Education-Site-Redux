@@ -334,7 +334,7 @@
 		/*jslint regexp: true */
 		pic = $(IMG
 			.replace('%s', (person.first_name + person.last_name).toLowerCase().replace(/[^a-z]/g, ''))
-			.replace('%s', person.title)
+			.replace('%s', person.working_title)
 			.replace('%s', person.first_name)
 			.replace('%s', person.last_name));
 		/*jslint regexp: false */
