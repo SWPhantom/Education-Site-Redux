@@ -1,8 +1,8 @@
 /*!
  * Faculty Research Interests v1.0.2
- * http://education.ucsb.edu/Faculty-Research/Faculty-Research-Projects
+ * http://education.ucsb.edu/research-faculty/research-interests
  *
- * Copyright (c) 2011, Justin Force and the Regents of the University of California
+ * Copyright (c) 2014, Justin Force, Zhenya Frolov and the Regents of the University of California
  * Licensed under the BSD 3-Clause License
  */
 

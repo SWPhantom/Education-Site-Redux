@@ -1,8 +1,8 @@
 /*!
  * Faculty Listing
- * http://education.ucsb.edu/Faculty-Research/Faculty-Listing/
+ * http://education.ucsb.edu/research-faculty/faculty
  *
- * Copyright (c) 2011 Justin Force and the UC Regents
+ * Copyright (c) 2014 Justin Force, Zhenya Frolov, and the UC Regents
  * Licensed under the BSD 3-Clause License
  */
 

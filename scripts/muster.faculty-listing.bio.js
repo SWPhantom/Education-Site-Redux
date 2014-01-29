@@ -1,8 +1,9 @@
 /*!
  * Faculty Listing Bio
- * http://education.ucsb.edu/Faculty-Research/Faculty-Listing/
+ * http://education.ucsb.edu/research-faculty/bio
+ * Accessible via http://education.ucsb.edu/research-faculty/faculty
  *
- * Copyright (c) 2011 Justin Force and the UC Regents
+ * Copyright (c) 2014 Justin Force, Zhenya Frolov and the UC Regents
  * Licensed under the BSD 3-Clause License
  */
 
@@ -427,14 +428,6 @@
 
 	$window.bind('all_finished', function () {
 		populatePage(person);
-
-		// XXX If the adjustLayout function exists in the global scope, it means
-		// that we're on one of the pages using the old, stupid 3 column layout
-		// script. After a filter, we have to adjust the layout.
-		//
-		if (window.adjustLayout) {
-			window.adjustLayout();
-		}
 	});
 
 	//////////////////////////////////////////////////////////////////////////////

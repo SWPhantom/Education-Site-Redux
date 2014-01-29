@@ -1,8 +1,8 @@
 /*!
  * The Gevirtz School Instructor Codes Page v1.1.3
- * http://education.ucsb.edu/webdata/syllabi/instructor_codes.html
+ * http://education.ucsb.edu/research-faculty/instructor-codes
  *
- * Copyright (c) 2011, Justin Force
+ * Copyright (c) 2014, Justin Force, Zhenya Frolov, and UC Regents
  * Licensed under the BSD 3-Clause License
  */
 
@@ -10,16 +10,16 @@
 /*global jQuery, muster */
 
 /*
- *	Output:
- *	 ______________________ ________________
- *		|Instructor						| Code					 |
- *	 	 ______________________ ________________
- *		|Doe, Jane						 | ED199					|
- *	 ______________________ ________________
- *	|Deer, John						| CNSP440				|
- *					.
- *					.
- *					.
+ *Output:
+ *  _____________ _____________
+ * |Instructor   |Code         |
+ *  _____________ _____________
+ * |Doe, Jane    |ED199        |
+ *  _____________ _____________
+ * |Deer, John   |CNSP440      |
+ *             .
+ *             .
+ *             .
  */
 
 (function ($) {
@@ -47,14 +47,6 @@
 								].join('')
 							).text([this.last_name, this.first_name].join(', '));
 						}
-						/*
-					function () {
-						var html, dl;
-						html = $('<div>'); // wrap it for appending
-						html.append(this.last_name + ', ' + this.first_name);
-						return html.html(); // unwrap it
-					}
-				*/
 				],
 
 			[
