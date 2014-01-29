@@ -423,7 +423,7 @@
 		//
 		if (!person) {
 			$(function () {
-				$('#musterCenterContent').html([
+				$('#musterDataContent').html([
 					'Could not find bio for <strong>',
 					args.first,
 					args.last,
