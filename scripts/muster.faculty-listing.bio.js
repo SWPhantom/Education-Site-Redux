@@ -362,6 +362,7 @@
 		department2: false,
 		emphasis: false,
 		publications: false,
+		presentations: false,
 		awards_and_honors: false,
 		affiliations: false,
 		education: false
@@ -435,22 +436,6 @@
 			});
 			return;
 		}
-
-		////XXX TEST TO MAKE THE SIDEBAR WORK========================================================================
-/*	muster('ggsedb').query({
-		select: '*',
-		from: 'profile',
-		where: "active = 'yes' and first_name = '%s' and last_name = '%s'".replace(/%s/, args.first).replace(/%s/, args.last)
-	}, function () {
-		this.toTable(
-			[
-				person.first_name + ' ' + person.last_name,
-				person.title,
-				
-	 		], '#musterInfoContent') // Target container for table (<div id="currentlyFunded"></div>)
-	});
-*/
-		////XXX END OF TEST==========================================================================================
 
 		// set vitae path. This isn't stored in the database and must be calculated.
 		//
@@ -593,6 +578,21 @@
 		}, function () {
 			person.awards = awards(this.results);
 			$window.trigger('awards_and_honors');
+		});
+
+		// awards and honors
+		//
+		muster('ggsedb').query({
+			select: '"year", profile_id, title',
+			from: 'lectures_papers_presented',
+			where: [
+				'year is not null and profile_id = ',
+				person.id
+			].join(''),
+			order: 'year desc'
+		}, function () {
+			person.presentations = presentations(this.results);
+			$window.trigger('presentations');
 		});
 
 		// affiliations
