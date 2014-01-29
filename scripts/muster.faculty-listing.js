@@ -17,6 +17,7 @@
 		LINK = "/research-faculty/bio?first=%s&last=%s",
 		NAME = '<h3><a href="%s">%s <span class=surname>%s</span></a></h3>',
 		IMG = '<img src="http://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/%s.jpg" alt="%s %s %s"/>';
+		args = {};
 
 	// Parse arguments. URL key=value pairs populate `args` with args[key] = value.
 	//
@@ -27,10 +28,10 @@
 	//			yield `args.first == 'Bar'`
 	//
 	//
-	/*$.each(location.href.split('?')[1].split('&'), function () {
+	$.each(location.href.split('?')[1].split('&'), function () {
 		var arg = this.split('=');
 		args[arg[0]] = window.unescape(arg[1]);
-	});*/
+	});
 
 	function personHas(person, field, value) {
 		return person.data(field).match(value) !== null;
