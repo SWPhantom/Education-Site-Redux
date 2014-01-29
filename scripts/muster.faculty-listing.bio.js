@@ -586,10 +586,10 @@
 			select: '"year", profile_id, title',
 			from: 'lectures_papers_presented',
 			where: [
-				'year is not null and profile_id = ',
+				'title is not null and profile_id = ',
 				person.id
 			].join(''),
-			order: 'year desc'
+			order: '"year" desc'
 		}, function () {
 			person.presentations = presentations(this.results);
 			$window.trigger('presentations');
