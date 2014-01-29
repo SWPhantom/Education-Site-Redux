@@ -21,13 +21,6 @@
  * 2. Uncomment the required function to use.
  */
 
-
-
- 
-
-
-
-
 /**
  * Preprocess variables for the html template.
  */
