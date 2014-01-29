@@ -583,15 +583,12 @@
 		// awards and honors
 		//
 		muster('ggsedb').query({
-			select: '"year", profile_id, title',
+			select: '*',
 			from: 'lectures_papers_presented',
-			where: [
-				'title is not null and profile_id = ',
-				person.id
-			].join(''),
+			where: 	'title is not null and profile_id = ' + person.id,
 			order: '"year" desc'
 		}, function () {
-			person.presentations = presentations(this.results);
+			//person.presentations = presentations(this.results);
 			$window.trigger('presentations');
 		});
 
