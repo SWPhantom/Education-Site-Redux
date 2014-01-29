@@ -6,6 +6,7 @@
  * Copyright (c) 2014 Justin Force, Zhenya Frolov and the UC Regents
  * Licensed under the BSD 3-Clause License
  */
+ 
 
 /*jslint browser: true, indent: 2 */
 /*global jQuery, muster */
