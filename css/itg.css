@@ -1,0 +1,108 @@
+.cmenu * {
+    margin:0;
+    padding:0;
+    font-size:11px;
+}
+.cmenu {
+    font-family:Helvetica,Arial,sans-serif;
+    cursor:pointer;
+    list-style:none;
+    color:#006;
+}
+.cmenu ul {
+    list-style:none;
+}
+.cmenu ul ul {
+    margin-left:-10px;
+}
+.cmenu a {
+    text-decoration:none;
+    color:#006;
+}
+.cmenu li {
+    list-style-type:none;
+    line-height:18px;
+    margin-left:10px;
+}
+.cmenu li span {
+    padding-left:12px;
+    margin-left:-12px;
+}
+.cmenu-collapsed span {
+    background:transparent url(/plus.gif) left no-repeat ! important;
+}
+.cmenu-expanded span {
+    background:transparent url(/minus.gif) left no-repeat;
+}
+.whitebox {
+   margin:5px 1%; 
+   text-align:center;
+}
+.table {
+    display:table;
+}
+.whitebox .table {
+    max-width:100%;
+    width:97%;
+    margin:auto;
+    text-align:left;
+}
+.whitebox .row {
+    display:table-row;
+}
+.whitebox table {
+    padding:0;
+    margin:0;
+    border-collapse:collapse;
+}
+.whitebox .topleft {
+    width:15px;
+    height:15px;
+    background:transparent url('/itg/itgrssbg.png') no-repeat;
+    display:table-cell;
+}
+.whitebox .top {
+    height:15px;
+    background:transparent url('/itg/itgrssbg.png') -15px 0 no-repeat;
+    display:table-cell;
+}
+.whitebox .topright {
+    width:15px;
+    height:15px;
+    background:transparent url('/itg/itgrssbg.png') right top no-repeat;
+    display:table-cell;
+}
+.whitebox .left {
+    width:15px;
+    background:transparent url('/itg/itgrssbg.png') 0 -15px no-repeat;
+    display:table-cell;
+}
+.whitebox .content {
+    display:table-cell;
+}
+.whitebox .right {
+    width:15px;
+    background:transparent url('/itg/itgrssbg.png') 100% -15px no-repeat;
+    display:table-cell;
+}
+.whitebox .bottomleft {
+    width:15px;
+    height:15px;
+    background:transparent url('/itg/itgrssbg.png') left bottom no-repeat;
+    display:table-cell;
+}
+.whitebox .bottom {
+    height:15px;
+    background:transparent url('/itg/itgrssbg.png') -15px 100% no-repeat;
+    display:table-cell;
+}
+.whitebox .bottomright {
+    width:15px;
+    height:15px;
+    background:transparent url('/itg/itgrssbg.png') right bottom no-repeat;
+    display:table-cell;
+}
+
+#leftColumn, #centerColumn, #rightColumn {
+	overflow:auto ! important;
+}
