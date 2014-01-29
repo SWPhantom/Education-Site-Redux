@@ -199,11 +199,11 @@
 		});
 	}
 
-	function addURLFilter() {
+	/*function addURLFilter() {
 		if(args[1] === 'ccsp'){
 			document.getElementById("friFilter").selectedIndex = 1;
 		}
-	}
+	}*/
 
 	muster('ggsedb').query({
 
@@ -306,7 +306,7 @@
 
 		$(function () {
 			$('#facultyListing').replaceWith(people.attr('id', 'facultyListing'));
-			addURLfilter();
+			//addURLfilter();
 			addFilter();
 
 		});
