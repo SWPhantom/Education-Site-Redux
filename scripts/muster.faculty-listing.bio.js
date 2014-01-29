@@ -330,6 +330,10 @@
 				person.affiliations
 			],
 			[
+				'Lectures and Papers Presented:',
+				person.presentations
+			],
+			[
 				'Publications:',
 				person.publications
 			]
