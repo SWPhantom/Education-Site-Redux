@@ -27,10 +27,10 @@
 	//			yield `args.first == 'Bar'`
 	//
 	//
-	$.each(location.href.split('?')[1].split('&'), function () {
+	/*$.each(location.href.split('?')[1].split('&'), function () {
 		var arg = this.split('=');
 		args[arg[0]] = window.unescape(arg[1]);
-	});
+	});*/
 
 	function personHas(person, field, value) {
 		return person.data(field).match(value) !== null;
