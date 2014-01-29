@@ -17,7 +17,6 @@
 		$window = $(window),
 		VITAE_PATH = 'http://education.ucsb.edu/drupal7/sites/default/files/faculty_vitae/%s.pdf',
 		IMG = '<img src="http://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/%s.jpg" alt="%s %s %s"/>', 
-		//will be: IMG = '<img src="http://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/%s.jpg" alt="%s %s %s"/>';
 		args = {};
 
 	// add trim method to String prototype if it doesn't already exist (IE<9)

@@ -18,13 +18,23 @@
 		NAME = '<h3><a href="%s">%s <span class=surname>%s</span></a></h3>',
 		IMG = '<img src="http://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/%s.jpg" alt="%s %s %s"/>';
 
-
+	// Parse arguments. URL key=value pairs populate `args` with args[key] = value.
+	//
+	// `http://.../?first=Bob&last=Foo` yields `args = { first: 'Bob', last: 'Foo' }`
+	//
+	// N.B. does not handle multiple arguments with the same name. The last
+	//			argument to appear is the one used. So `?first=Foo&first=Bar` will
+	//			yield `args.first == 'Bar'`
+	//
+	//
+	$.each(location.href.split('?')[1].split('&'), function () {
+		var arg = this.split('=');
+		args[arg[0]] = window.unescape(arg[1]);
+	});
 
 	function personHas(person, field, value) {
 		return person.data(field).match(value) !== null;
 	}
-
-
 
 	// Add a <select> which allows you to filter the results displayed
 	function addFilter() {
@@ -189,6 +199,11 @@
 		});
 	}
 
+	function addURLFilter() {
+		if(args[1] === 'ccsp'){
+			document.getElementById("friFilter").selectedIndex = 1;
+		}
+	}
 
 	muster('ggsedb').query({
 
@@ -291,15 +306,8 @@
 
 		$(function () {
 			$('#facultyListing').replaceWith(people.attr('id', 'facultyListing'));
+			addURLfilter();
 			addFilter();
-
-			// XXX If the adjustLayout function exists in the global scope, it means
-			// that we're on one of the pages using the old, stupid 3 column layout
-			// script. After a filter, we have to adjust the layout.
-			//
-			if (window.adjustLayout) {
-				window.adjustLayout();
-			}
 
 		});
 
