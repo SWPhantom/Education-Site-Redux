@@ -213,6 +213,34 @@
 		}
 	}
 
+	/*
+	 * return the list of presentations as an array of html strings, each representing
+	 * one award
+	 */
+	function presentations(input) {
+		var ret = [];
+
+		function presentation(aw) {
+			var text = aw.title.trim();
+			if (aw.year) {
+				text += ', ' + aw.year.trim();
+			}
+			return text;
+		}
+
+		$.each(input, function () {
+			if (this) {
+				ret.push(presentation(this));
+			}
+		});
+
+		if (ret.length === 0) {
+			return null;
+		} else {
+			return ret;
+		}
+	}
+
 	function populatePage(person) {
 
 		// These variables can be reused for each column
@@ -580,15 +608,15 @@
 			$window.trigger('awards_and_honors');
 		});
 
-		// awards and honors
+		// presentations
 		//
 		muster('ggsedb').query({
 			select: '*',
 			from: 'lectures_papers_presented',
-			where: 	'title is not null and profile_id = ' + person.id,
+			where: 'title is not null and profile_id = ' + person.id,
 			order: '"year" desc'
 		}, function () {
-			//person.presentations = presentations(this.results);
+			person.presentations = presentations(this.results);
 			$window.trigger('presentations');
 		});
 
