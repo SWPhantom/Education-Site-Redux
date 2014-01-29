@@ -278,7 +278,6 @@
 
 		$(function () {
 			$('#facultyListing').replaceWith(people.attr('id', 'facultyListing'));
-			//addURLfilter();
 			addFilter();
 
 		});

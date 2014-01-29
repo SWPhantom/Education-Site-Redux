@@ -17,9 +17,9 @@
 		$window = $(window),
 		VITAE_PATH = 'http://education.ucsb.edu/drupal7/sites/default/files/faculty_vitae/%s.pdf',
 		IMG = '<img src="http://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/%s.jpg" alt="%s %s %s"/>', 
+		//will be: IMG = '<img src="http://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/%s.jpg" alt="%s %s %s"/>';
 		args = {};
 
-	
 	// add trim method to String prototype if it doesn't already exist (IE<9)
 	//
 	if (!String.prototype.trim) {
@@ -28,7 +28,19 @@
 		};
 	}
 
-	
+	// Parse arguments. URL key=value pairs populate `args` with args[key] = value.
+	//
+	// `http://.../?first=Bob&last=Foo` yields `args = { first: 'Bob', last: 'Foo' }`
+	//
+	// N.B. does not handle multiple arguments with the same name. The last
+	//			argument to appear is the one used. So `?first=Foo&first=Bar` will
+	//			yield `args.first == 'Bar'`
+	//
+	//
+	$.each(location.href.split('?')[1].split('&'), function () {
+		var arg = this.split('=');
+		args[arg[0]] = window.unescape(arg[1]);
+	});
 
 
 	/////////////////////////////////////////////////////////////////////////////
