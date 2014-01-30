@@ -71,9 +71,13 @@ function ggse_process_page(&$vars) {
  */
 /**oceano added js below */
 function ggse_preprocess_node(&$vars) {
-	if(arg(0) == 'node' && arg(1) == '28' && arg(3) == null) {//Research Interests
+	if(arg(0) == 'node' && arg(1) == '28' && arg(3) == null) {//ITG login page
 		drupal_add_js(drupal_get_path('theme', 'ggse') . '/scripts/itg.js');
 		drupal_add_css(drupal_get_path('theme', 'ggse').'/css/itg.css');
+	}else if(arg(0) == 'node' && arg(1) == '348' && arg(3) == null) {//Faculty Spotlight
+		drupal_add_js('https://apps.education.ucsb.edu/muster/muster.js', 'external');
+		drupal_add_js(drupal_get_path('theme', 'ggse') . '/scripts/muster.faculty-spotlight.js');
+		drupal_add_css(drupal_get_path('theme', 'ggse').'/css/muster.faculty-spotlight.css');
 	}else if(arg(0) == 'node' && arg(1) == '498' && arg(3) == null) {//Research Interests
 		drupal_add_js('https://apps.education.ucsb.edu/muster/muster.js', 'external');
 		drupal_add_js(drupal_get_path('theme', 'ggse') . '/scripts/muster.faculty-research-interests.js');
