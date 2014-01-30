@@ -23,33 +23,68 @@
  *  ------------------------------
  *
  */
-
-
-//(function ($) {
-	//'use strict';
-	//people = [];
+/*(function ($) {
+	'use strict';
+	people = [];
 	
-	/*function output(peopleList){
+	function output(peopleList){
 		var person = peopleList[Math.floor(Math.random()*peopleList.length)];
 		$("#facultySpotlight").append(person.first_name);
-	}*/
+	}
 	
 	
-		//$("#facultySpotlight").append("TEST");
-	document.getElementById('facultySpotlight').innerHTML = '<b>this will appear bold</b>';
+	//$("#facultySpotlight").append("TEST");
+	//document.getElementById('facultySpotlight').innerHTML = '<b>this will appear bold</b>';
 	
-	/*muster('ggsedb').query({
+	muster('ggsedb').query({
 		select: 'id, first_name, last_name, faculty_listing_category, biography',
 		from: 'profile',
 		where: 'id is not null',
 		order: 'last_name asc'
 	}, function () {
 		people.push(this);
+	});
+}(jQuery));
+*/
 
-		
-	});*/
-//}(jQuery));
+(function ($) {
 
+	'use strict';
 
+	muster('ggsedb').query({
+		select: 'id, first_name, last_name, instructor_code',
+		from: 'profile',
+		where: 'instructor_code is not null',
+		order: 'last_name asc'
+	}, function () {
+		this.toTable(
+			[
+				[
+					'Instructor',
+			function () {
+							return $('<a>').attr(
+								'href',
+								[
+									'/research-faculty/bio?first=',
+									this.first_name,
+									'&last=',
+									this.last_name
+								].join('')
+							).text([this.last_name, this.first_name].join(', '));
+						}
+				],
 
+			[
+				'Code',
+
+				function () {
+					var html, dl;
+					html = $('<div>'); // wrap it for appending
+					html.append(this.instructor_code || null);
+					return html.html(); // unwrap it
+				}
+			]
+		], '#facultySpotlight') // Target container for table (<div id="currentlyFunded"></div>)
+	});
+}(jQuery));
 
