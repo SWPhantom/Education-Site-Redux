@@ -26,7 +26,7 @@
 
 
 (function ($) {
-	'use strict';
+	//'use strict';
 	//people = [];
 	
 	/*function output(peopleList){
