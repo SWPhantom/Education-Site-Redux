@@ -35,8 +35,10 @@
 	}*/
 	
 	
-		$("#facultySpotlight").append("TEST");
+		//$("#facultySpotlight").append("TEST");
+	var div = document.getElementById('#facultySpotlight');
 
+	div.innerHTML = div.innerHTML + 'TEST12';
 	
 	/*muster('ggsedb').query({
 		select: 'id, first_name, last_name, faculty_listing_category, biography',
