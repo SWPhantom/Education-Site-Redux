@@ -41,7 +41,7 @@
 		var container = document.getElementById("facultySpotlight");
 		var person = peopleList[Math.floor(Math.random()*peopleList.length)];
 		var div = document.createElement("div");
-		div.innerHTML = "Hats";
+		div.innerHTML = $(person).first_name;//"Hats";
 		$(container).append(div);
 	})
 	
@@ -50,6 +50,6 @@
 	//document.getElementById('facultySpotlight').innerHTML = '<b>this will appear bold</b>';
 	
 	
-	$(document).ready(output(people));
+	//$(document).ready(output(people));
 }(jQuery));
 
