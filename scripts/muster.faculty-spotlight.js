@@ -24,10 +24,17 @@
  *
  */
 
+
 (function ($) {
 	'use strict';
+	people = [];
+	
+	function output(peopleList){
+		var person = peopleList[Math.floor(Math.random()*peopleList.length)];
+		$("#facultySpotlight").append(person.first_name);
+	}
+	
 
-	people = []
 
 	
 	muster('ggsedb').query({
@@ -36,36 +43,9 @@
 		where: 'id is not null',
 		order: 'last_name asc'
 	}, function () {
+		people.push(this);
+
 		
-		people[this.id] = this;
-		this.toTable(
-			[
-				[
-					'Instructor',
-			function () {
-							return $('<a>').attr(
-								'href',
-								[
-									'/research-faculty/bio?first=',
-									this.first_name,
-									'&last=',
-									this.last_name
-								].join('')
-							).text([this.last_name, this.first_name].join(', '));
-						}
-				],
-
-			[
-				'Code',
-
-				function () {
-					var html, dl;
-					html = $('<div>'); // wrap it for appending
-					html.append(this.instructor_code || null);
-					return html.html(); // unwrap it
-				}
-			]
-		], '#facultySpotlight') // Target container for table (<div id="currentlyFunded"></div>)
 	});
 }(jQuery));
 
