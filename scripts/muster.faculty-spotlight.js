@@ -24,10 +24,10 @@
  *
  */
 
-$(document).ready(function ($) {
+(function ($) {
 	'use strict';
 	var people = [];
-	muster('ggsedb').query({
+	$(document).ready(muster('ggsedb').query({
 		select: 'id, first_name, last_name, faculty_listing_category, biography',
 		from: 'profile',
 		where: 'id is not null',
@@ -35,15 +35,15 @@ $(document).ready(function ($) {
 	}, function () {
 		people.push(this);
 		//$("#facultySpotlight").append(this);
-	});
+	});)
 
-	function output(peopleList){
+	$(document).ready(function output(peopleList){
 		var container = document.getElementById("facultySpotlight");
 		var person = peopleList[Math.floor(Math.random()*peopleList.length)];
 		var div = document.createElement("div");
 		div.innerHTML = "Hats";
 		$(container).append(div);
-	}
+	})
 	
 	
 	//$("#facultySpotlight").append("TEST");
