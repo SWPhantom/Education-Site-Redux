@@ -27,7 +27,7 @@
 
 (function ($) {
 	'use strict';
-	people = [];
+	//people = [];
 	
 	/*function output(peopleList){
 		var person = peopleList[Math.floor(Math.random()*peopleList.length)];
