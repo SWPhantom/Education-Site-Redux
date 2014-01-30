@@ -62,7 +62,7 @@ function getNumbers() {
     balls90.sort(function() {
         return Math.random() - .25
     });
-    var cardContainer= document.getElementById("cardContainer");
+    var cardContainer = document.getElementById("header-wrapper");
     for (var i = 1; i <= 12; i++) {
         player1.push(balls90[i]);
         var div = document.createElement("div");
