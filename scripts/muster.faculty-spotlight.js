@@ -29,7 +29,7 @@
 	var people = [];
 	
 	$(document).ready(function output(peopleList){
-		var container = document.getElementById("#facultySpotlight");
+		var container = document.getElementById("facultySpotlight");
 		var person = peopleList[Math.floor(Math.random()*peopleList.length)];
 		var div = document.createElement("div");
 		div.innerHTML = person;
