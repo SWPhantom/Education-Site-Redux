@@ -24,7 +24,7 @@
  *
  */
 
-(function ($) {
+$(document).ready(function ($) {
 	'use strict';
 	var people = [];
 	muster('ggsedb').query({
@@ -37,13 +37,13 @@
 		//$("#facultySpotlight").append(this);
 	});
 
-	$(document).ready(function output(peopleList){
+	function output(peopleList){
 		var container = document.getElementById("facultySpotlight");
 		var person = peopleList[Math.floor(Math.random()*peopleList.length)];
 		var div = document.createElement("div");
 		div.innerHTML = "Hats";
 		$(container).append(div);
-	})
+	}
 	
 	
 	//$("#facultySpotlight").append("TEST");
