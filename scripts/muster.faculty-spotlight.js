@@ -26,7 +26,7 @@
 
 (function ($) {
 	'use strict';
-	people = [];
+	var people = [];
 	
 	function output(peopleList){
 		var container = document.getElementById("facultySpotlight");
