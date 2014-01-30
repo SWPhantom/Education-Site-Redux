@@ -50,6 +50,6 @@
 	//document.getElementById('facultySpotlight').innerHTML = '<b>this will appear bold</b>';
 	
 	
-	output(people);
+	$(document).ready(output(people));
 }(jQuery));
 
