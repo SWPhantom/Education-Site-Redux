@@ -28,8 +28,11 @@
 	people = [];
 	
 	function output(peopleList){
+		var container = document.getElementById("facultySpotlight");
 		var person = peopleList[Math.floor(Math.random()*peopleList.length)];
-		$("#facultySpotlight").append(person.first_name);
+		var div = document.createElement("div");
+		div.innerHTML = person.toString();
+		container.append(div);
 	}
 	
 	
@@ -42,8 +45,11 @@
 		where: 'id is not null',
 		order: 'last_name asc'
 	}, function () {
-		$("#facultySpotlight").append(this);
+		people.push(this);
+		//$("#facultySpotlight").append(this);
 	});
+
+	output(people);
 }(jQuery));
 
 /*
