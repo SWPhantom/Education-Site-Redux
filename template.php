@@ -118,10 +118,15 @@ function ggse_process_comment(&$vars) {
 /**
  * Override or insert variables into the block templates.
  */
-/* -- Delete this line if you want to use these functions
+///* -- Delete this line if you want to use these functions
 function ggse_preprocess_block(&$vars) {
+	if(arg(0) == 'block' && arg(1) == '11' && arg(3) == null) {//Faculty Spotlight
+		drupal_add_js('https://apps.education.ucsb.edu/muster/muster.js', 'external');
+		drupal_add_js(drupal_get_path('theme', 'ggse') . '/scripts/muster.faculty-spotlight.js');
+		//drupal_add_css(drupal_get_path('theme', 'ggse').'/css/muster.faculty-spotlight.css');
+	}
 }
-function ggse_process_block(&$vars) {
+/*function ggse_process_block(&$vars) {
 }
 // */
 
