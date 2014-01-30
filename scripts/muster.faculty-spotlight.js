@@ -24,17 +24,17 @@
  *
  */
 
-(document).ready(function ($) {
+$(document).ready(function ($) {
 	'use strict';
 	var people = [];
 	
-	function output(peopleList){
+	$(document).ready(function output(peopleList){
 		var container = document.getElementById("facultySpotlight");
 		var person = peopleList[Math.floor(Math.random()*peopleList.length)];
 		var div = document.createElement("div");
 		div.innerHTML = person;
 		container.append(div);
-	}
+	})
 	
 	
 	//$("#facultySpotlight").append("TEST");
