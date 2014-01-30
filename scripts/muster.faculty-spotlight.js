@@ -25,7 +25,7 @@
  */
 
 
-(function ($) {
+//(function ($) {
 	//'use strict';
 	//people = [];
 	
@@ -48,7 +48,7 @@
 
 		
 	});*/
-}(jQuery));
+//}(jQuery));
 
 
 
