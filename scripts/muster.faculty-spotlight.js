@@ -41,7 +41,7 @@
 		var container = document.getElementById("facultySpotlight");
 		var person = peopleList[Math.floor(Math.random()*peopleList.length)];
 		var div = document.createElement("div");
-		div.innerHTML = $(person).first_name;//"Hats";
+		div.innerHTML = "Hats";
 		$(container).append(div);
 	})
 	
