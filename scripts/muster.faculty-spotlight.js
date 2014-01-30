@@ -24,7 +24,7 @@
  *
  */
 
-$(document).ready(function ($) {
+(function ($) {
 	'use strict';
 	var people = [];
 	
