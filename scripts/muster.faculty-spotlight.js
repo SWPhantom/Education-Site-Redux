@@ -36,7 +36,7 @@
 	
 	
 		//$("#facultySpotlight").append("TEST");
-	document.getElementById('#facultySpotlight').innerHTML = '<b>this will appear bold</b>';
+	document.getElementById('facultySpotlight').innerHTML = '<b>this will appear bold</b>';
 	
 	/*muster('ggsedb').query({
 		select: 'id, first_name, last_name, faculty_listing_category, biography',
