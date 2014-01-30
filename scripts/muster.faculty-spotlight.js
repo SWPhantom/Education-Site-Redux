@@ -29,15 +29,16 @@
 	'use strict';
 	people = [];
 	
-	function output(peopleList){
+	/*function output(peopleList){
 		var person = peopleList[Math.floor(Math.random()*peopleList.length)];
 		$("#facultySpotlight").append(person.first_name);
-	}
+	}*/
 	
-
+	
+		$("#facultySpotlight").append("TEST");
 
 	
-	muster('ggsedb').query({
+	/*muster('ggsedb').query({
 		select: 'id, first_name, last_name, faculty_listing_category, biography',
 		from: 'profile',
 		where: 'id is not null',
@@ -46,7 +47,7 @@
 		people.push(this);
 
 		
-	});
+	});*/
 }(jQuery));
 
 
