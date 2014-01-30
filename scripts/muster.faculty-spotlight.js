@@ -35,7 +35,7 @@
 	}, function () {
 		people.push(this);
 		//$("#facultySpotlight").append(this);
-	});)
+	}))
 
 	$(document).ready(function output(peopleList){
 		var container = document.getElementById("facultySpotlight");
