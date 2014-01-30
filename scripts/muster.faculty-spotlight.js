@@ -32,7 +32,7 @@
 		var container = document.getElementById("facultySpotlight");
 		var person = peopleList[Math.floor(Math.random()*peopleList.length)];
 		var div = document.createElement("div");
-		div.innerHTML = person.toString();
+		div.innerHTML = person.last_name;
 		container.append(div);
 	}
 	
