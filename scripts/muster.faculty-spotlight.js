@@ -27,7 +27,16 @@
 (function ($) {
 	'use strict';
 	var people = [];
-	
+	muster('ggsedb').query({
+		select: 'id, first_name, last_name, faculty_listing_category, biography',
+		from: 'profile',
+		where: 'id is not null',
+		order: 'last_name asc'
+	}, function () {
+		people.push(this);
+		//$("#facultySpotlight").append(this);
+	});
+
 	$(document).ready(function output(peopleList){
 		var container = document.getElementById("facultySpotlight");
 		var person = peopleList[Math.floor(Math.random()*peopleList.length)];
@@ -40,16 +49,7 @@
 	//$("#facultySpotlight").append("TEST");
 	//document.getElementById('facultySpotlight').innerHTML = '<b>this will appear bold</b>';
 	
-	muster('ggsedb').query({
-		select: 'id, first_name, last_name, faculty_listing_category, biography',
-		from: 'profile',
-		where: 'id is not null',
-		order: 'last_name asc'
-	}, function () {
-		people.push(this);
-		//$("#facultySpotlight").append(this);
-	});
-
+	
 	output(people);
 }(jQuery));
 
