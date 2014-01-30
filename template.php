@@ -77,7 +77,7 @@ function ggse_preprocess_node(&$vars) {
 	}else if(arg(0) == 'node' && arg(1) == '348' && arg(3) == null) {//Faculty Spotlight
 		drupal_add_js('https://apps.education.ucsb.edu/muster/muster.js', 'external');
 		drupal_add_js(drupal_get_path('theme', 'ggse') . '/scripts/muster.faculty-spotlight.js');
-		drupal_add_css(drupal_get_path('theme', 'ggse').'/css/muster.faculty-spotlight.css');
+		//drupal_add_css(drupal_get_path('theme', 'ggse').'/css/muster.faculty-spotlight.css');
 	}else if(arg(0) == 'node' && arg(1) == '498' && arg(3) == null) {//Research Interests
 		drupal_add_js('https://apps.education.ucsb.edu/muster/muster.js', 'external');
 		drupal_add_js(drupal_get_path('theme', 'ggse') . '/scripts/muster.faculty-research-interests.js');
