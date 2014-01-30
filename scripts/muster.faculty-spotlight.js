@@ -23,7 +23,7 @@
  *  ------------------------------
  *
  */
-/*(function ($) {
+(function ($) {
 	'use strict';
 	people = [];
 	
@@ -42,11 +42,11 @@
 		where: 'id is not null',
 		order: 'last_name asc'
 	}, function () {
-		people.push(this);
+		$("#facultySpotlight").append(this);
 	});
 }(jQuery));
-*/
 
+/*
 (function ($) {
 
 	'use strict';
@@ -87,4 +87,5 @@
 		], '#facultySpotlight') // Target container for table (<div id="currentlyFunded"></div>)
 	});
 }(jQuery));
+*/
 
