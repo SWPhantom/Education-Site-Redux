@@ -1,0 +1,23 @@
+#facultySpotlight table {
+	display: block;
+	float: right;
+	clear: both;
+	text-align: left;
+	text-decoration: none;
+	outline-style: none;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	
+	height: none;
+
+	border-image-width: 0;
+	
+}
+#facultySpotlight img {
+	display: block;
+	margin: auto;
+	max-width: 100px;
+	width: 100px;
+	border: 1px solid #333;
