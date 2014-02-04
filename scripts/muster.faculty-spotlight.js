@@ -23,17 +23,16 @@
  *  ------------------------------
  *
  */
-
 (function ($) {
 		
 		'use strict';
 		
 		var $facultySpotlight;
-		
+		var temp = "Academic Senate Faculty";
 		$(document).ready(muster('ggsedb').query({
 				select: 'id, first_name, last_name, faculty_listing_category, biography',
 				from: 'profile',
-				where: 'id is not null'
+				where: "id is not null and faculty_listing_category = 'Academic Senate Faculty'"
 		}, function () {
 				
 				var randomIndex, person, $spotlightContent;
@@ -42,6 +41,7 @@
 				person = this.results[randomIndex];
 				
 				$spotlightContent = $('<div>');
+				$spotlightContent.append($('<img src="http://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/' + (person.first_name + person.last_name).toLowerCase().replace(/[^a-z]/g, '') + '.jpg"/>'));
 				$spotlightContent.append($('<b>' + person.first_name + ' ' + person.last_name + '</b>'));
 				$spotlightContent.append($('<p>' + person.biography.slice(0, 150) + '... </b>more</b></p>'));
 				
