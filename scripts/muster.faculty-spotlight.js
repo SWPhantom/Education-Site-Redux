@@ -43,7 +43,7 @@
         
         $spotlightContent = $('<div>');
         $spotlightContent.append($('<h3>' + person.first_name + ' ' + person.last_name + '</h3>'));
-        $spotlightContent.append($('<p>' + person.biography + '</p>'));
+        $spotlightContent.append($('<p>' + person.biography.slice(0, 150) + '</p>'));
         
         $(function () {
             if ($facultySpotlight === undefined) {
