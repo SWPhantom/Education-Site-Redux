@@ -33,7 +33,7 @@
 		select: 'id, first_name, last_name, faculty_listing_category, biography',
 		from: 'profile',
 		where: 'id is not null',
-		//order: 'RAND()',
+		order: 'RANDOM()',
 		limit: '1'
 	}, function () {
 
