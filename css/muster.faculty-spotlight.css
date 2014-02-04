@@ -34,7 +34,7 @@
 	
 }
 
-#facultySpotlight table > td {
+/*#facultySpotlight table > td {
 	margin-top: 0;
 	margin-left: 0;
 	margin-right: 0;
@@ -49,7 +49,8 @@
 	border-left: 0;
 	border-right: 0;
 	border-bottom: 0;
-}
+}*/
+
 #facultySpotlight img {
 	display: block;
 	margin: auto;
