@@ -42,8 +42,8 @@
 				
 				$spotlightContent = $('<div>');
 				$spotlightContent.append($('<img src="http://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/' + (person.first_name + person.last_name).toLowerCase().replace(/[^a-z]/g, '') + '.jpg"/>'));
-				//$spotlightContent.append($('<b>' + person.first_name + ' ' + person.last_name + '</b>'));
-				$spotlightContent.append($('' + person.biography.slice(0, 150) + '<p></b>...more&raquo;</b></p>'));
+				var link = "/research-faculty/bio?first="+person.first_name+"&last="+person.last_name;
+				$spotlightContent.append($('' + person.biography.slice(0, 150) + '<p><a href="'+link+'"><b>...more&raquo;</b></a></p>'));
 				
 				$(function () {
 						if ($facultySpotlight === undefined) {
