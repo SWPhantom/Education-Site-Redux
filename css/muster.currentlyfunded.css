@@ -112,15 +112,17 @@
 	cursor: pointer;
 }
 
+/*Taken from http://cdn-4.psndealer.com/e2/dealersite/images/sort_arrow_up.png*/
 #currentlyFunded .sorted {
 	border-bottom: 3px solid #069;
-	background: url("/images/sort_arrow_up.png") right center no-repeat;
+	background: url("http://education.ucsb.edu/drupal7/sites/default/files/main_images/contracts_grants/sort_arrow_up.png") right center no-repeat;
 	padding-right: 20px;
 }
 
+/*Taken from http://cdn-4.psndealer.com/e2/dealersite/images/sort_arrow_down.png*/
 #currentlyFunded .rsorted {
 	border-top: 3px solid #069;
-	background: url("/images/sort_arrow_down.png") right center no-repeat;
+	background: url("http://education.ucsb.edu/drupal7/sites/default/files/main_images/contracts_grants/sort_arrow_down.png") right center no-repeat;
 	padding-right: 20px;
 }
 
