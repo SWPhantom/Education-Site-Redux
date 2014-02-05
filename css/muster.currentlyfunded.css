@@ -114,10 +114,14 @@
 
 #currentlyFunded .sorted {
 	border-bottom: 3px solid #069;
+	background: url("http://cdn-4.psndealer.com/e2/dealersite/images/sort_arrow_up.png") right center no-repeat;
+	padding-right: 20px;
 }
 
 #currentlyFunded .rsorted {
 	border-top: 3px solid #069;
+	background: url("http://cdn-4.psndealer.com/e2/dealersite/images/sort_arrow_down.png") right center no-repeat;
+	padding-right: 20px;
 }
 
 #currentlyFunded td[colspan=2] {
