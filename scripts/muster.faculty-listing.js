@@ -184,6 +184,7 @@
 			'first_name',
 			'last_name',
 			'display_name',
+			'profile.title',
 			'profile.working_title',
 			'emphasis_type_1.name as emphasis1',
 			'emphasis_type_2.name as emphasis2',
