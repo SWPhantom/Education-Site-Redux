@@ -59,6 +59,15 @@
 		}
 	}
 
+	function altNameTitle(attempt, backup) {
+			if(attempt === undefined){
+				return backup;
+			}else{
+				return attempt;
+			}
+		}
+	}
+
 	/*
 	 * return a set of 9 digits as a (123) 456-7890 phone number
 	 */
@@ -258,11 +267,7 @@
 			[
 				'',
 				[
-					if(person.display_name === undefined){
-						person.first_name + ' ' + person.last_name
-					}else{
-						person.display_name + ' ' + person.last_name
-					}
+					altNameTitle(person.profile_name, person.first_name) + ' '+ person.last_name
 				]
 			],
 			[
