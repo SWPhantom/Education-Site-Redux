@@ -99,6 +99,7 @@ function ggse_preprocess_node(&$vars) {
 	}else if(arg(0) == 'node' && arg(1) == '642' && arg(3) == null){//Instructor Codes Page
 		drupal_add_js('https://apps.education.ucsb.edu/muster/muster.js', 'external');
 		drupal_add_js(drupal_get_path('theme', 'ggse') . '/scripts/muster.instructorcodes.js');
+		drupal_add_css(drupal_get_path('theme', 'ggse').'/css/muster.instructorcodes.css');
 	}
 }
 // */
