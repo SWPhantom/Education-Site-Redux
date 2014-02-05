@@ -3,9 +3,9 @@
 }
 
 #facultySpotlight tbody tr:nth-child(even) td {
-	background: rgba(0, 100, 250, 0.3);
+	background: rgba(0, 100, 250, 1);
 }
 
 #facultySpotlight tbody tr:nth-child(even) dl {
-	background: rgba(250, 100, 0, 0.3);
+	background: rgba(250, 100, 0, 1);
 }
