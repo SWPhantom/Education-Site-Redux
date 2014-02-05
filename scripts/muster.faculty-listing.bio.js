@@ -257,11 +257,19 @@
 		[
 			[
 				'',
-				person.first_name + ' ' + person.last_name
+				if(person.display_name === undefined){
+					person.first_name + ' ' + person.last_name
+				}else{
+					person.display_name + ' ' + person.last_name
+				}
 			],
 			[
 				'',
-				'-' + person.working_title
+				if(person.working_title === undefined){
+					'-' + person.title
+				}else{
+					'-' + person.working_title
+				}
 			],
 			[
 				'',
@@ -301,10 +309,21 @@
 		//
 		column = $('<div>');
 		dl = $('<dl>');
-
+		var tempName;
+		var tempTitle;
+		if(person.profile_name === undefined){
+			tempName = person.first_name;
+		}else{
+			tempName = person.profile_name;
+		}
+		if(person.working_title === undefined){
+			tempTitle = person.title;
+		}else{
+			tempTitle = person.working_title;
+		}
 		column
-			.append($('<h1 class=header></h1>').text(person.first_name + ' ' + person.last_name))
-			.append($('<h3 class=Paltino14pxBlackBold></h3>').text(person.working_title + ', ' + person.education))
+			.append($('<h1 class=header></h1>').text(temName + ' ' + person.last_name))
+			.append($('<h3 class=Paltino14pxBlackBold></h3>').text(tempTitle + ', ' + person.education))
 			.append(dl);
 
 		$.each(
