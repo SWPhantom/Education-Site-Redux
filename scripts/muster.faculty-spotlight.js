@@ -36,6 +36,7 @@
 		}, function () {
 				
 				var randomIndex, person, $spotlightContent;
+				
 				//XXX: Need to add exception handling: if the picture URL is 404, reroll the random number.
 				randomIndex = Math.floor(this.results.length * Math.random());
 				person = this.results[randomIndex];
@@ -43,13 +44,14 @@
 					randomIndex = Math.floor(this.results.length * Math.random());
 					person = this.results[randomIndex];
 				}
-				
-				$spotlightContent = $('<div>');
-				$spotlightContent.append($('<img src="http://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/' + (person.first_name + person.last_name).toLowerCase().replace(/[^a-z]/g, '') + '.jpg"/>'));
+
 				var link = "/research-faculty/bio?first="+person.first_name+"&last="+person.last_name;
 				var cutBio = person.biography.slice(0,150).replace(/\s+\S*$/, "");
+
+				$spotlightContent = $('<div>');
+				$spotlightContent.append($('<img src="http://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/' + (person.first_name + person.last_name).toLowerCase().replace(/[^a-z]/g, '') + '.jpg"/>'));
 				$spotlightContent.append($('' + cutBio + '...<p><a href="'+link+'"><b>...more&raquo;</b></a></p>'));
-				
+
 				$(function () {
 						if ($facultySpotlight === undefined) {
 								$facultySpotlight = $('#facultySpotlight');
