@@ -251,8 +251,11 @@
 					.replace('%s', this.display_name)
 					.replace('%s', this.last_name));
 			}
-			working_title = $('<h4>' + this.working_title + '</h4>');
-
+			if(this.working_title === undefined){
+				working_title = $('<h4>' + this.title + '</h4>');
+			}else{
+				working_title = $('<h4>' + this.working_title + '</h4>');
+			}
 			// insert picture into link before text
 			name.find('a').prepend(pic);
 
