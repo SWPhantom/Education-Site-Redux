@@ -257,18 +257,22 @@
 		[
 			[
 				'',
-				if(person.display_name === undefined){
-					person.first_name + ' ' + person.last_name
-				}else{
-					person.display_name + ' ' + person.last_name
+				function(){
+					if(person.display_name === undefined){
+						person.first_name + ' ' + person.last_name
+					}else{
+						person.display_name + ' ' + person.last_name
+					}
 				}
 			],
 			[
 				'',
-				if(person.working_title === undefined){
-					'-' + person.title
-				}else{
-					'-' + person.working_title
+				function(){
+					if(person.working_title === undefined){
+						'-' + person.title
+					}else{
+						'-' + person.working_title
+					}
 				}
 			],
 			[
