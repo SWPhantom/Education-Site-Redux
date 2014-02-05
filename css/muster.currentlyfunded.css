@@ -91,7 +91,6 @@
 
 #currentlyFunded dd.amount {
 	clear: right;
-	margin-top: -1.2em;
 }
 
 #currentlyFunded .sponsor, #currentlyFunded .abstract {
