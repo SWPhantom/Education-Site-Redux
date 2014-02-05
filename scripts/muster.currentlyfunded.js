@@ -170,7 +170,7 @@
 							dl.append('<dt class=yearEnd>Year End:</dt><dd>' + this.year_end + '</dd>');
 						}
 						if (this.award_amount) {
-							dl.append('<dt class=amount>Amount:</dt><dd class=amount>' + dollars(this.award_amount) + '</dd>');
+							dl.append('<dt class=amount>Amount:</dt><dd>' + dollars(this.award_amount) + '</dd>');
 						}
 						if (this.source) {
 							dl.append('<dt class=sponsor>Sponsor:</dt><dd class=sponsor>' + this.source + '</dd>');
