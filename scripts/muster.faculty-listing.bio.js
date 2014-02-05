@@ -60,11 +60,10 @@
 	}
 
 	function altNameTitle(attempt, backup) {
-			if(attempt === undefined){
-				return backup;
-			}else{
-				return attempt;
-			}
+		if(attempt === undefined){
+			return backup;
+		}else{
+			return attempt;
 		}
 	}
 
