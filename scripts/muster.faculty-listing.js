@@ -183,6 +183,7 @@
 			'profile.id', // needed for serialization
 			'first_name',
 			'last_name',
+			'display_name',
 			'profile.working_title',
 			'emphasis_type_1.name as emphasis1',
 			'emphasis_type_2.name as emphasis2',
@@ -239,11 +240,17 @@
 				this.src = 'http://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/faculty-placeholder.gif'
 			});
 
-			name = $(NAME
-				.replace('%s', link)
-				.replace('%s', this.first_name)
-				.replace('%s', this.last_name));
-
+			if(this.display_name === undefined){
+				name = $(NAME
+					.replace('%s', link)
+					.replace('%s', this.first_name)
+					.replace('%s', this.last_name));
+			}else{
+				name = $(NAME
+					.replace('%s', link)
+					.replace('%s', this.display_name)
+					.replace('%s', this.last_name));
+			}
 			working_title = $('<h4>' + this.working_title + '</h4>');
 
 			// insert picture into link before text
