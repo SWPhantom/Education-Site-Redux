@@ -39,7 +39,7 @@
 				//XXX: Need to add exception handling: if the picture URL is 404, reroll the random number.
 				randomIndex = Math.floor(this.results.length * Math.random());
 				person = this.results[randomIndex];
-				while(person.last_name.toLowerCase() === 'marcoulides'){
+				while(person.last_name.toLowerCase() === 'marcoulides' || person.last_name.toLowerCase() === 'yun'){
 					randomIndex = Math.floor(this.results.length * Math.random());
 					person = this.results[randomIndex];
 				}
