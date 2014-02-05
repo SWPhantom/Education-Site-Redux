@@ -326,7 +326,7 @@
 			tempTitle = person.working_title;
 		}
 		column
-			.append($('<h1 class=header></h1>').text(temName + ' ' + person.last_name))
+			.append($('<h1 class=header></h1>').text(tempName + ' ' + person.last_name))
 			.append($('<h3 class=Paltino14pxBlackBold></h3>').text(tempTitle + ', ' + person.education))
 			.append(dl);
 
