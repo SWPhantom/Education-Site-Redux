@@ -32,11 +32,11 @@
 		$(document).ready(muster('ggsedb').query({
 				select: 'id, first_name, last_name, faculty_listing_category, biography',
 				from: 'profile',
-				where: "id is not null and faculty_listing_category = 'Academic Senate Faculty'"
+				where: "id is not null and faculty_listing_category = 'Academic Senate Faculty' and last_name is not 'Marcoulides'" //Added a Marcoulides exception.
 		}, function () {
 				
 				var randomIndex, person, $spotlightContent;
-				
+				//XXX: Need to add exception handling: if the picture URL is 404, reroll the random number.
 				randomIndex = Math.floor(this.results.length * Math.random());
 				person = this.results[randomIndex];
 				
