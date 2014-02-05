@@ -218,7 +218,7 @@
 		});
 
 		$.each(this.serializeBy('id').results, function () {
-			var person, pic, name, link, working_title;
+			var person, pic, name, link, work_title;
 
 			person = $('<div class=person></div>');
 
@@ -252,14 +252,14 @@
 					.replace('%s', this.last_name));
 			}
 			if(this.working_title === undefined){
-				working_title = $('<h4>' + this.title + '</h4>');
+				work_title = $('<h4>' + this.title + '</h4>');
 			}else{
-				working_title = $('<h4>' + this.working_title + '</h4>');
+				work_title = $('<h4>' + this.working_title + '</h4>');
 			}
 			// insert picture into link before text
 			name.find('a').prepend(pic);
 
-			person.append(name).append(working_title).click(function (event) {
+			person.append(name).append(work_title).click(function (event) {
 
 				var href = $(this).find('a').attr('href');
 
