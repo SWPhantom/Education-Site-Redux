@@ -271,13 +271,9 @@
 			],
 			[
 				'',
-				function(){
-					if(person.working_title === undefined){
-						'-' + person.title
-					}else{
-						'-' + person.working_title
-					}
-				}
+				[
+					'-' altNameTitle(person.working_title, person.title)
+				]
 			],
 			[
 				'',
@@ -324,6 +320,7 @@
 		}else{
 			tempName = person.profile_name;
 		}
+		console.log(person.profile_name)
 		if(person.working_title === undefined){
 			tempTitle = person.title;
 		}else{
