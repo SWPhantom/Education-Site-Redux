@@ -1,11 +1,11 @@
 #facultyInstructorCodes table{
-	margin_left: 0px
+	margin_left: 0px;
 }
 
 #facultySpotlight tbody tr:nth-child(even) td {
-	background-color: rgba(0, 100, 250, 0.3)
+	background-color: rgba(0, 100, 250, 0.3);
 }
 
 #facultySpotlight tbody tr:nth-child(even) dl {
-	background-color: rgba(250, 100, 0, 0.3)
+	background-color: rgba(250, 100, 0, 0.3);
 }

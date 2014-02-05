@@ -1,9 +1,9 @@
 #musterInfoContent dd {
 	margin-left: 0;
+	font-size: 11px;
 }
 header > h1#page-title {
   margin: 0px 0;
   font-size: 0%;
   line-height: 0em;
 }
-
