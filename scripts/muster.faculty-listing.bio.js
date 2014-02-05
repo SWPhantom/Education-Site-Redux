@@ -266,7 +266,7 @@
 			[
 				'',
 				[
-					altNameTitle(person.profile_name, person.first_name) + ' '+ person.last_name
+					altNameTitle(person.display_name, person.first_name) + ' '+ person.last_name
 				]
 			],
 			[
@@ -315,12 +315,12 @@
 		dl = $('<dl>');
 		var tempName;
 		var tempTitle;
-		if(person.profile_name === undefined){
+		if(person.display_name === undefined){
 			tempName = person.first_name;
 		}else{
-			tempName = person.profile_name;
+			tempName = person.display_name;
 		}
-		console.log(person.profile_name)
+		
 		if(person.working_title === undefined){
 			tempTitle = person.title;
 		}else{
