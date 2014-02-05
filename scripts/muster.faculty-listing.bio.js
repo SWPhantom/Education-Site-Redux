@@ -272,7 +272,7 @@
 			[
 				'',
 				[
-					'-' altNameTitle(person.working_title, person.title)
+					'-' + altNameTitle(person.working_title, person.title)
 				]
 			],
 			[
