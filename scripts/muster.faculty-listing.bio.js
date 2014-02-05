@@ -257,13 +257,13 @@
 		[
 			[
 				'',
-				function(){
+				[
 					if(person.display_name === undefined){
 						person.first_name + ' ' + person.last_name
 					}else{
 						person.display_name + ' ' + person.last_name
 					}
-				}
+				]
 			],
 			[
 				'',
