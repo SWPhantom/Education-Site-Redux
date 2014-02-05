@@ -641,13 +641,3 @@
 	});
 
 }(jQuery));
-
-
-jQuery('dt').click(function() {
-    var data_wrapper = jQuery(this).next('div.bio_data');
-    if ( data_wrapper.is(':hidden') ) {
-        data_wrapper.slideDown('slow');
-    } else {
-        data_wrapper.slideUp('slow');
-    }
-});
