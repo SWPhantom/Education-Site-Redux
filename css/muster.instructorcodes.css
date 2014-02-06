@@ -39,24 +39,19 @@
 
 #facultyInstructorCodes td {
 	min-width: 8em;
-	padding: 0.5em 1em;
-}
-
-#facultyInstructorCodes th {
-	/*font-family: sans-serif;*/
 }
 
 #facultyInstructorCodes dt {
 	font-weight: bold;
 }
 
-#facultyInstructorCodes tbody tr:nth-child(even) td {
-	padding: 0;
+#facultyInstructorCodes tbody tr:nth-child(even) {
+	padding: 3px;
 	margin: 0;
 }
 
-#facultyInstructorCodes tbody tr:nth-child(odd) td {
-	padding: 0;
+#facultyInstructorCodes tbody tr:nth-child(odd) {
+	padding: 3px;
 	margin: 0;
 	//background-color: #69c;
 }
