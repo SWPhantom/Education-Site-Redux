@@ -663,5 +663,13 @@
 			$window.trigger('affiliations');
 		});
 	});
+	$('dt').click(function(e){
+    // All dt elements after this dt element until the next dt element
+    // Will be hidden or shown depending on it's current visibility
+    $(this).nextUntil('dt').toggle();
+	});
 
+	// Hide all dd elements to start with
+	$('dd').hide();
+	
 }(jQuery));
