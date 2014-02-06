@@ -4,26 +4,9 @@
 	clear: both;
 }
 
-#currentlyFunded>a {
-	font-weight: bold;
-	display: block;
-	float: right;
-	clear: both;
-	text-align: right;
-	text-decoration: none;
-	outline-style: none;
-}
-
 #currentlyFunded table a, #currentlyFunded h3 {
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 13px;
 	cursor: pointer;
 	margin: 0;
-}
-
-#currentlyFunded thead tr {
-	color: black;
 }
 
 #currentlyFunded tbody td>dl {
@@ -88,23 +71,17 @@
 }
 
 #currentlyFunded th {
-	border-top: 3px solid #69c;
-	border-bottom: 3px solid #69c;
 	cursor: pointer;
 }
 
 /*Taken from http://cdn-4.psndealer.com/e2/dealersite/images/sort_arrow_up.png*/
 #currentlyFunded .sorted {
-	border-bottom: 3px solid #069;
 	background: url("http://education.ucsb.edu/drupal7/sites/default/files/main_images/contracts_grants/sort_arrow_up.png") right center no-repeat;
-	padding-right: 20px;
 }
 
 /*Taken from http://cdn-4.psndealer.com/e2/dealersite/images/sort_arrow_down.png*/
 #currentlyFunded .rsorted {
-	border-top: 3px solid #069;
 	background: url("http://education.ucsb.edu/drupal7/sites/default/files/main_images/contracts_grants/sort_arrow_down.png") right center no-repeat;
-	padding-right: 20px;
 }
 
 #currentlyFunded td[colspan=2] {
