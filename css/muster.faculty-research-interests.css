@@ -1,0 +1,27 @@
+#facultyResearchInterests table a, #facultyResearchInterests h3 {
+	cursor: pointer;
+	margin: 0;
+}
+
+#facultyResearchInterests tbody td>dl {
+	border-top: 1px solid #ddd;
+	margin-top: 0;
+}
+
+#facultyResearchInterests dt {
+	font-weight: bold;
+}
+
+#facultyResearchInterests th {
+	cursor: pointer;
+}
+
+/*Taken from http://cdn-4.psndealer.com/e2/dealersite/images/sort_arrow_up.png*/
+#facultyResearchInterests .sorted {
+	background: url("http://education.ucsb.edu/drupal7/sites/default/files/main_images/contracts_grants/sort_arrow_up.png") right center no-repeat;
+}
+
+/*Taken from http://cdn-4.psndealer.com/e2/dealersite/images/sort_arrow_down.png*/
+#facultyResearchInterests .rsorted {
+	background: url("http://education.ucsb.edu/drupal7/sites/default/files/main_images/contracts_grants/sort_arrow_down.png") right center no-repeat;
+}
