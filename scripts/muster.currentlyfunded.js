@@ -63,7 +63,8 @@
 			'grant_closed is null',
 			" and (grant_type = 'Grant' or grant_type = 'Income/MOU' or grant_type = 'Award')",
 			' and grants_and_contracts_id = grants_and_contracts.id and profile_id = profile.id'
-		].join('')
+		].join(''),
+		order: 'last_name asc'
 	}, function () {
 
 		this.serializeBy('id').toTable(
