@@ -45,12 +45,12 @@
 	font-weight: bold;
 }
 
-#facultyInstructorCodes tbody tr:nth-child(even) {
+#facultyInstructorCodes tbody > tr:nth-child(even) {
 	padding: 3px;
 	margin: 0;
 }
 
-#facultyInstructorCodes tbody tr:nth-child(odd) {
+#facultyInstructorCodes tbody > tr:nth-child(odd) {
 	padding: 3px;
 	margin: 0;
 	background-color: rgba(255,0,0,.5);
