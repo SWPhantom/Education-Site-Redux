@@ -2,10 +2,134 @@
 	margin-left: 50px;
 }
 
-#facultySpotlight tbody tr:nth-child(even) td {
-	background: rgba(0, 100, 250, 1);
+/*#facultyInstructorCodes {
+	font-size: 0.85em;
+	font-family: Arial, Helvetica, sans-serif;
+}*/
+
+#facultyInstructorCodes table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	clear: both;
 }
 
-#facultySpotlight tbody tr:nth-child(even) dl {
-	background: rgba(250, 100, 0, 1);
+#facultyInstructorCodes>a {
+	font-weight: bold;
+	display: block;
+	float: right;
+	clear: both;
+	text-align: right;
+	text-decoration: none;
+	outline-style: none;
+	/*color: #333;*/
+}
+
+#facultyInstructorCodes table a, #facultyInstructorCodes h3 {
+	text-decoration: none;
+	/*color: #036;*/
+	font-weight: bold;
+	font-size: 13px;
+	cursor: pointer;
+	margin: 0;
+}
+
+#facultyInstructorCodes thead tr {
+	/*background: #69c;*/
+	color: black;
+	/*text-shadow:
+		0 -1px 1px rgba(0, 0, 0, 0.3),
+		0 1px 1px rgba(0, 0, 0, 0.2);*/
+}
+
+#facultyInstructorCodes tbody tr:nth-child(4n-1), tr:nth-child(4n) {
+	background: #eee;
+}
+
+#facultyInstructorCodes tbody td>dl {
+	border-top: 1px solid #ddd;
+	margin-top: 0;
+}
+
+#facultyInstructorCodes td {
+	min-width: 8em;
+	padding: 0.5em 1em;
+}
+
+#facultyInstructorCodes th {
+	/*font-family: sans-serif;*/
+}
+
+#facultyInstructorCodes dt {
+	font-weight: bold;
+}
+
+#facultyInstructorCodes tbody tr:nth-child(even) td {
+	padding: 0;
+	margin: 0;
+}
+
+#facultyInstructorCodes tbody tr:nth-child(even) dl {
+	padding: 1em 2em;
+	overflow: auto;
+}
+
+#facultyInstructorCodes dd, #facultyInstructorCodes dt {
+	float: left;
+}
+
+#facultyInstructorCodes dd {
+	margin-left: 0.5em;
+}
+
+#facultyInstructorCodes dt.yearEnd {
+	margin-left: 3em;
+}
+
+#facultyInstructorCodes .amount {
+	float: right;
+}
+
+#facultyInstructorCodes dt.amount {
+	margin-right: 6em;
+}
+
+#facultyInstructorCodes dd.amount {
+	clear: right;
+	margin-top: -1.5em;
+}
+
+#facultyInstructorCodes .sponsor, #facultyInstructorCodes .abstract {
+	margin-top: 1em;
+}
+
+#facultyInstructorCodes dt.sponsor, #facultyInstructorCodes .abstract {
+	clear: both;
+}
+
+#facultyInstructorCodes dd.abstract {
+	white-space: pre-wrap;
+}
+
+#facultyInstructorCodes th {
+	border-top: 3px solid #69c;
+	border-bottom: 3px solid #69c;
+	cursor: pointer;
+}
+
+/*Taken from http://cdn-4.psndealer.com/e2/dealersite/images/sort_arrow_up.png*/
+#facultyInstructorCodes .sorted {
+	border-bottom: 3px solid #069;
+	background: url("http://education.ucsb.edu/drupal7/sites/default/files/main_images/contracts_grants/sort_arrow_up.png") right center no-repeat;
+	padding-right: 20px;
+}
+
+/*Taken from http://cdn-4.psndealer.com/e2/dealersite/images/sort_arrow_down.png*/
+#facultyInstructorCodes .rsorted {
+	border-top: 3px solid #069;
+	background: url("http://education.ucsb.edu/drupal7/sites/default/files/main_images/contracts_grants/sort_arrow_down.png") right center no-repeat;
+	padding-right: 20px;
+}
+
+#facultyInstructorCodes td[colspan=2] {
+	padding: 0 1em;
 }
