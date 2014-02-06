@@ -22,6 +22,6 @@ header > h1#page-title {
 	padding-bottom: 3px;
 }
 
-#musterDataContent dd:nth-child(odd) {
+#musterDataContent dl:after dd:nth-child(odd) {
 	background-color: rgb(230, 230, 230);
 }
