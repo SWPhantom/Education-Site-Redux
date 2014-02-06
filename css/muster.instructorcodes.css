@@ -20,14 +20,6 @@
 	font-weight: bold;
 }
 
-#facultyInstructorCodes dd, #facultyInstructorCodes dt {
-	float: left;
-}
-
-#facultyInstructorCodes dd {
-	margin-left: 0.5em;
-}
-
 #facultyInstructorCodes th {
 	cursor: pointer;
 }
@@ -40,8 +32,4 @@
 /*Taken from http://cdn-4.psndealer.com/e2/dealersite/images/sort_arrow_down.png*/
 #facultyInstructorCodes .rsorted {
 	background: url("http://education.ucsb.edu/drupal7/sites/default/files/main_images/contracts_grants/sort_arrow_down.png") right center no-repeat;
-}
-
-#facultyInstructorCodes td[colspan=2] {
-	padding: 0 1em;
 }
