@@ -4,8 +4,9 @@
 
 .fesPerson h1, .fesPerson h2, .fesPerson h3, .fesPerson h4 {
 	display: inline;
+	vertical-align: middle;
 }
 
 .fesPerson:nth-child(even) {
-	background-color: #ddd;
+	background-color: #eee;
 }
