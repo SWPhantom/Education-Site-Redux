@@ -55,8 +55,14 @@
 	margin: 0;
 }
 
+#facultyInstructorCodes tbody tr:nth-child(odd) td {
+	padding: 0;
+	margin: 0;
+	//background-color: #69c;
+}
+
 #facultyInstructorCodes tbody tr:nth-child(even) dl {
-	background: #69c;
+	background-color: #69c;
 }
 
 #facultyInstructorCodes dd, #facultyInstructorCodes dt {
