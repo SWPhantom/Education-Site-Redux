@@ -2,32 +2,12 @@
 	margin-left: 50px;
 }
 
-#facultyInstructorCodes table {
-	border-spacing: 0;
-	border-collapse: collapse;
-	clear: both;
-}
-
-#facultyInstructorCodes>a {
-	font-weight: bold;
-	display: block;
-	float: right;
-	clear: both;
-	text-align: right;
-	text-decoration: none;
-	outline-style: none;
-}
-
 #facultyInstructorCodes table a, #facultyInstructorCodes h3 {
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 13px;
 	cursor: pointer;
 	margin: 0;
 }
 
 #facultyInstructorCodes thead tr {
-	/*background: #69c;*/
 	color: black;
 }
 
@@ -36,26 +16,8 @@
 	margin-top: 0;
 }
 
-#facultyInstructorCodes td {
-	min-width: 8em;
-}
-
 #facultyInstructorCodes dt {
 	font-weight: bold;
-}
-
-#facultyInstructorCodes tbody > tr:nth-child(even) {
-	padding: 3px;
-	margin: 0;
-}
-
-#facultyInstructorCodes tbody > tr:nth-child(odd) {
-	padding: 3px;
-	margin: 0;
-}
-
-#facultyInstructorCodes tbody tr:nth-child(even) dl {
-	background-color: #69c;
 }
 
 #facultyInstructorCodes dd, #facultyInstructorCodes dt {
@@ -67,20 +29,16 @@
 }
 
 #facultyInstructorCodes th {
-	border-top: 3px solid #69c;
-	border-bottom: 3px solid #69c;
 	cursor: pointer;
 }
 
 /*Taken from http://cdn-4.psndealer.com/e2/dealersite/images/sort_arrow_up.png*/
 #facultyInstructorCodes .sorted {
-	border-bottom: 3px solid #069;
 	background: url("http://education.ucsb.edu/drupal7/sites/default/files/main_images/contracts_grants/sort_arrow_up.png") right center no-repeat;
 }
 
 /*Taken from http://cdn-4.psndealer.com/e2/dealersite/images/sort_arrow_down.png*/
 #facultyInstructorCodes .rsorted {
-	border-top: 3px solid #069;
 	background: url("http://education.ucsb.edu/drupal7/sites/default/files/main_images/contracts_grants/sort_arrow_down.png") right center no-repeat;
 }
 
