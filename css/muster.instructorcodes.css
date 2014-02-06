@@ -53,7 +53,7 @@
 #facultyInstructorCodes tbody tr:nth-child(odd) {
 	padding: 3px;
 	margin: 0;
-	background-color: #69c;
+	background-color: rgba(255,0,0,.5);
 }
 
 #facultyInstructorCodes tbody tr:nth-child(even) dl {
