@@ -8,5 +8,5 @@
 }
 
 .fesPerson:nth-child(even) {
-	background-color: #dde;
+	background-color: rgb(235, 244, 251);
 }
