@@ -409,7 +409,7 @@
 	});
 
 	// Hide all dd elements to start with
-	$('dd').hide();
+	//$('dd').hide();
 	}
 
 
