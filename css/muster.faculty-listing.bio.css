@@ -11,9 +11,9 @@ header > h1#page-title {
 
 #musterDataContent dt {
 	font-family:'Open Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	background-color: rgba(236, 244, 251, .552941);
+	background-color: rgb(236, 244, 251);
 	cursor: pointer;
-	font-size: 14px;
+	font-size: 15px;
 	height: 21px;
 	padding: 8px 10px 8px 15px;
 	border-bottom: 1px solid #fff;
@@ -21,9 +21,9 @@ header > h1#page-title {
 
 #musterDataContent dt:hover {
 	font-family:'Open Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	background-color: rgba(83, 174, 229);
+	background-color: rgb(83, 174, 229);
 	cursor: pointer;
-	font-size: 14px;
+	font-size: 15px;
 	height: 21px;
 	padding: 8px 10px 8px 15px;
 	border-bottom: 1px solid #fff;
