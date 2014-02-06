@@ -11,8 +11,7 @@ header > h1#page-title {
 
 #musterDataContent dt {
 	font-family:'Open Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	background-color: rgb(236, 244, 251);
-	background-size: 50%;
+	background: url("http://education.ucsb.edu/drupal7/sites/default/files/main_images/background-light.png")
 	cursor: pointer;
 	font-size: 15px;
 	height: 21px;
@@ -22,8 +21,7 @@ header > h1#page-title {
 
 #musterDataContent dt:hover {
 	font-family:'Open Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	background-color: rgb(83, 174, 229);
-	background-size: 50%;
+	background: url("http://education.ucsb.edu/drupal7/sites/default/files/main_images/background-dark.png")
 	color: #fff;
 	cursor: pointer;
 	font-size: 15px;
