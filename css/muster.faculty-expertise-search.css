@@ -1,3 +1,7 @@
+.fesPerson h1, .fesPerson h2, .fesPerson h3 {
+	display: inline;
+}
+
 .fesPerson:nth-child(even) {
 	background-color: #99a;
 }

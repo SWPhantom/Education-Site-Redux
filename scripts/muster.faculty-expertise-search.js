@@ -110,8 +110,14 @@
 
 				div.append(
 					$('<div class=fesPerson>').append(
-						$('<h3><a href="' + BIO_LINK.replace(/%s/, this.first_name).replace(/%s/, this.last_name) + '">' + this.first_name + ' ' + this.last_name + '</a></h3>, <h4>' + this.title + '. ' + depts + '</h4>')
+						$('<h3>').append(
+							$('<a>').text(
+								this.first_name + ' ' + this.last_name + ','
+							).attr('href', BIO_LINK.replace(/%s/, this.first_name).replace(/%s/, this.last_name))
 						)
+					).append(
+						$(' <h4> ' + this.title + '. ' + depts +'</h4>')
+					)
 				);
 			}
 		});
