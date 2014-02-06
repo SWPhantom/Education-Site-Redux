@@ -10,12 +10,23 @@ header > h1#page-title {
 }
 
 #musterDataContent dt {
-	background-color: rgb(60, 175, 231);
+	font-family:'Open Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	background-color: rgba(236, 244, 251, .552941);
 	cursor: pointer;
-	font-size: 125%;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	border-bottom: 1px solid #333;
+	font-size: 14px;
+	height: 21px;
+	padding: 8px 10px 8px 15px;
+	border-bottom: 1px solid #fff;
+}
+
+#musterDataContent dt:hover {
+	font-family:'Open Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	background-color: rgba(83, 174, 229);
+	cursor: pointer;
+	font-size: 14px;
+	height: 21px;
+	padding: 8px 10px 8px 15px;
+	border-bottom: 1px solid #fff;
 }
 
 #musterDataContent dd {
@@ -23,5 +34,5 @@ header > h1#page-title {
 }
 
 #musterDataContent dd:nth-child(odd) {
-	background-color: rgb(230, 230, 230);
+	background-color: rgb(250, 250, 250);
 }
