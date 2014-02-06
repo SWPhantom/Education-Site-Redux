@@ -20,7 +20,6 @@
 
 #facultyInstructorCodes table a, #facultyInstructorCodes h3 {
 	text-decoration: none;
-	/*color: #036;*/
 	font-weight: bold;
 	font-size: 13px;
 	cursor: pointer;
@@ -53,7 +52,6 @@
 #facultyInstructorCodes tbody > tr:nth-child(odd) {
 	padding: 3px;
 	margin: 0;
-	background-color: rgba(255,0,0,.5);
 }
 
 #facultyInstructorCodes tbody tr:nth-child(even) dl {

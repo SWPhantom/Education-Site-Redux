@@ -92,6 +92,7 @@ function ggse_preprocess_node(&$vars) {
 	}else if(arg(0) == 'node' && arg(1) == '492' && arg(3) == null){//Faculty Expertise Page
 		drupal_add_js('https://apps.education.ucsb.edu/muster/muster.js', 'external');
 		drupal_add_js(drupal_get_path('theme', 'ggse') . '/scripts/muster.faculty-expertise-search.js');
+		drupal_add_css(drupal_get_path('theme', 'ggse').'/css/muster.faculty-expertise-search.css');
 	}else if(arg(0) == 'node' && arg(1) == '593' && arg(3) == null){//Currently Funded Page
 		drupal_add_js('https://apps.education.ucsb.edu/muster/muster.js', 'external');
 		drupal_add_js(drupal_get_path('theme', 'ggse') . '/scripts/muster.currentlyfunded.js');

@@ -56,7 +56,7 @@
 			$('<p>').html(
 				[
 					"<em>Please note that faculty member skills aren't listed on their",
-					' individual webpages and that the individual webpages do not', 
+					' individual webpages and that the individual webpages may not', 
 					' include every publication written by that scholar.</em>'
 				].join('')
 			)
@@ -116,9 +116,7 @@
 							).attr('href', BIO_LINK.replace(/%s/, this.first_name).replace(/%s/, this.last_name))
 						)
 					).append(
-						$('<h4>' + this.title + '</h4>')
-					).append(
-						$('<h4>' + depts + '</h4>')
+						$(', <h4>' + this.title + '. ' + depts + '</h4>')
 					)
 				);
 			}
