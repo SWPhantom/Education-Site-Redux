@@ -11,8 +11,8 @@ header > h1#page-title {
 
 #musterDataContent dt {
 	font-family:'Open Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	/*background-color: rgb(236, 244, 251);*/
-	linear-gradient(to left, #ff0000 50%, #0000ff 50%);
+	background-color: rgb(236, 244, 251);
+	background-size: 50%;
 	cursor: pointer;
 	font-size: 15px;
 	height: 21px;
@@ -23,6 +23,7 @@ header > h1#page-title {
 #musterDataContent dt:hover {
 	font-family:'Open Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	background-color: rgb(83, 174, 229);
+	background-size: 50%;
 	color: #fff;
 	cursor: pointer;
 	font-size: 15px;
