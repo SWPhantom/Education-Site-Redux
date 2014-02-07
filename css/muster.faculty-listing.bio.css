@@ -4,8 +4,12 @@ header > h1#page-title {
 	line-height: 0em;
 }
 
-#musterPictureContent {
-	
+.field-item {
+	width: 230px;
+}
+
+#musterPictureContent img{
+	width: 210;
 }
 
 #musterInfoContent dd {
