@@ -8,7 +8,7 @@ header > h1#page-title {
 	min-width: 230px;
 }
 
-#node-content > .field-name-field-announcements {
+.node-content > .field-name-field-announcements {
 	//width: 230px;
 	margin: 0 0 0 0;
 }
