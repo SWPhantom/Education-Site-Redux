@@ -8,15 +8,15 @@ header > h1#page-title {
 	min-width: 230px;
 }
 
-.field-name-field-announcements {
+#node-content > .field-name-field-announcements {
 	//width: 230px;
 	margin: 0 0 0 0;
 }
 
 #musterPictureContent img{
-	width: 200px;
+	width: 210px;
 	height: auto;
-	align: middle;
+	horizonal-align: middle;
 }
 
 #musterInfoContent dd {
