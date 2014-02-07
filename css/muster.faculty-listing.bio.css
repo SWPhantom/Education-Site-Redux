@@ -4,9 +4,9 @@ header > h1#page-title {
 	line-height: 0em;
 }
 
-/*.field-item  > #musterPictureContent{
-	width: 230px;
-}*/
+.field-item  > #musterPictureContent{
+	min-width: 230px;
+}
 
 #musterPictureContent img{
 	width: 200px;
