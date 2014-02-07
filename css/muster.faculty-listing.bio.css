@@ -1,18 +1,22 @@
+header > h1#page-title {
+	margin: 0px 0;
+	font-size: 0%;
+	line-height: 0em;
+}
+
+#musterPictureContent {
+	
+}
+
 #musterInfoContent dd {
 	margin-left: 0;
 	font-size: 11.5px;
 }
 
-header > h1#page-title {
-  margin: 0px 0;
-  font-size: 0%;
-  line-height: 0em;
-}
-
 #musterDataContent dt {
 	font-family:'Open Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	background: url("http://education.ucsb.edu/drupal7/sites/default/files/main_images/background-light.png");
-	background-size: 250px;
+	background-size: 250px 38px;
 	cursor: pointer;
 	font-size: 15px;
 	height: 21px;
@@ -23,7 +27,7 @@ header > h1#page-title {
 #musterDataContent dt:hover {
 	font-family:'Open Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	background: url("http://education.ucsb.edu/drupal7/sites/default/files/main_images/background-dark.png");
-	background-size: 250px;
+	background-size: 250px 38px;
 	color: #fff;
 	cursor: pointer;
 	font-size: 15px;
