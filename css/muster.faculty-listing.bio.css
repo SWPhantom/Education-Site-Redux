@@ -11,8 +11,7 @@ header > h1#page-title {
 #musterPictureContent img{
 	width: 200px;
 	height: auto;
-	margin-left: auto;
-	margin-right: auto;
+	align: middle;
 }
 
 #musterInfoContent dd {
