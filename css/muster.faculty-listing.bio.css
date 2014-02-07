@@ -9,12 +9,12 @@ header > h1#page-title {
 }
 
 .node-content > .field-name-field-announcements {
-	//width: 230px;
+	width: 240px;
 	margin: 0 0 0 0;
 }
 
 #musterPictureContent img{
-	width: 210px;
+	width: 200px;
 	height: auto;
 	horizonal-align: middle;
 }
