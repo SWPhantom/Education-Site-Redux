@@ -266,7 +266,7 @@
 			[
 				'',
 				[
-					altNameTitle(person.display_name, person.first_name) + ' '+ person.last_name
+					'<b>' + altNameTitle(person.display_name, person.first_name) + ' '+ person.last_name + '</b>'
 				]
 			],
 			[
