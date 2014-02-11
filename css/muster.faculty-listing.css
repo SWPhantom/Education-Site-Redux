@@ -70,7 +70,7 @@
 }
 
 
-.facultyListing #facultyListingLACTS .person {
+#facultyListingLACTS.facultyListing .person {
 	margin: 0;
 	padding: 2px;
 	height: auto;
@@ -78,7 +78,7 @@
 	cursor: pointer;
 }
 
-.facultyListing #facultyListingLACTS img {
+#facultyListingLACTS.facultyListing img {
 	display: none;
 }
 
