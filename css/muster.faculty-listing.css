@@ -64,9 +64,10 @@
 #facultyListingLACTS.facultyListing .person {
 	display: block;
 	height: auto;
-	width: 90%;
+	width: auto%;
 	margin: none;
 	float: left;
+	padding: none;
 }
 
 #facultyListingLACTS.facultyListing img {
@@ -86,9 +87,10 @@
 #facultyListingResearchers.facultyListing .person {
 	display: block;
 	height: auto;
-	width: 90%;
+	width: auto;
 	margin: none;
 	float: left;
+	padding: none;
 }
 
 #facultyListingResearchers.facultyListing h3, #facultyListingResearchers.facultyListing h4 {
