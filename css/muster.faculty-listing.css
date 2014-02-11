@@ -74,6 +74,7 @@
 	display: block;
 	height: auto;
 	width: 90%;
+	margin: none;
 	float: left;
 }
 
@@ -81,11 +82,22 @@
 	display: none;
 }
 
+#facultyListingResearchers.facultyListing h1, h2, h3, h4 {
+	display: inline;
+	text-align: left;
+}
+
 #facultyListingResearchers.facultyListing .person {
 	display: block;
 	height: auto;
-	width: 90%%;
+	width: 90%;
+	margin: none;
 	float: left;
+}
+
+#facultyListingResearchers.facultyListing h1, h2, h3, h4 {
+	display: inline;
+	text-align: left;
 }
 
 #facultyListingResearchers.facultyListing img {
