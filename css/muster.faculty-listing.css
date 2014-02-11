@@ -82,7 +82,7 @@
 	display: none;
 }
 
-#facultyListingResearchers.facultyListing h1, h2, h3, h4 {
+#facultyListingLACTS.facultyListing h3, #facultyListingLACTS.facultyListing h4 {
 	display: inline;
 	text-align: left;
 }
@@ -95,7 +95,7 @@
 	float: left;
 }
 
-#facultyListingResearchers.facultyListing h1, h2, h3, h4 {
+#facultyListingResearchers.facultyListing h3, #facultyListingResearchers.facultyListing h4 {
 	display: inline;
 	text-align: left;
 }
