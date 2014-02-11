@@ -14,10 +14,10 @@
 	'use strict';
 
 	var hidden_people,
-        people_senate,
-        people_lacts,
-        people_researchers,
-		LINK = "/research-faculty/bio?first=%s&last=%s",
+	people_senate,
+	people_lacts,
+	people_researchers,
+	LINK = "/research-faculty/bio?first=%s&last=%s",
 		NAME = '<h3><a href="%s">%s <span class=surname>%s</span></a></h3>',
 		IMG = '<img src="http://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/%s.jpg" alt="%s %s %s"/>';
 
@@ -29,131 +29,111 @@
 	function addFilter() {
 
 		var filter,
-			//hiddenPeople = $('<div>'), // A place to keep the rows that "hide" from the table
-			form = $('<form><label for=friFilter>Filter by department and emphasis: <select id=friFilter></select></label></form>');
+		//hiddenPeople = $('<div>'), // A place to keep the rows that "hide" from the table
+		form = $('<form><label for=friFilter>Filter by department and emphasis: <select id=friFilter></select></label></form>');
 
 		filter = form.find('select');
 
-		$.each([
-			{
-				label: '-- Show All --',
-				filter: function () {
-					return true;
-				}
-			},
-			{
-				label: 'Department of Counseling, Clinical & School Psychology',
-				filter: function () {
-					return personHas($(this), 'Departments', 'CCSP');
-				}
-			},
-			{
-				label: ' &nbsp; &nbsp; Clinical Psychology',
-				filter: function () {
-					return personHas($(this), 'Emphases', 'Clinical Psychology');
-				}
-			},
-			{
-				label: ' &nbsp; &nbsp; School Psychology Credential',
-				filter: function () {
-					return personHas($(this), 'Emphases', 'School Psychology Credential');
-				}
-			},
-			{
-				label: ' &nbsp; &nbsp; Counseling Psychology',
-				filter: function () {
-					return personHas($(this), 'Emphases', 'Counseling Psychology');
-				}
-			},
-			{
-				label: 'Department of Education',
-				filter: function () {
-					return personHas($(this), 'Departments', 'EDUC');
-				}
-			},
-			{
-				label: ' &nbsp; &nbsp; Child and Adolescent Development',
-				filter: function () {
-					return personHas($(this), 'Emphases', 'Child and Adolescent Development');
-				}
-			},
-			{
-				label: ' &nbsp; &nbsp; Cultural Perspectives &amp; Comparative Education',
-				filter: function () {
-					return personHas($(this), 'Emphases', 'Cultural Perspectives & Comparative Education');
-				}
-			},
-			{
-				label: ' &nbsp; &nbsp; Educational Leadership and Organizations',
-				filter: function () {
-					return personHas($(this), 'Emphases', 'Educational Leadership and Organizations');
-				}
-			},
-			{
-				label: ' &nbsp; &nbsp; Joint Doctoral Program in Educational Leadership',
-				filter: function () {
-					return personHas($(this), 'Emphases', 'Joint Doctoral Program in Educational Leadership');
-				}
-			},
-			{
-				label: ' &nbsp; &nbsp; Research Methodology',
-				filter: function () {
-					return personHas($(this), 'Emphases', 'Research Methodology');
-				}
-			},
-			{
-				label: ' &nbsp; &nbsp; Special Education, Disabilities &amp; Risk Studies',
-				filter: function () {
-					return personHas($(this), 'Emphases', 'Special Education, Disabilities & Risk Studies');
-				}
-			},
-			{
-				label: ' &nbsp; &nbsp; Teaching &amp; Learning',
-				filter: function () {
-					return personHas($(this), 'Emphases', 'Teaching & Learning');
-				}
-			},
-			{
-				label: 'Teacher Education Program',
-				filter: function () {
-					return personHas($(this), 'Departments', 'TEP');
-				}
-			},
-			{
-				label: ' &nbsp; &nbsp; Multiple Subject',
-				filter: function () {
-					return personHas($(this), 'Emphases', 'Multiple Subject');
-				}
-			},
-			{
-				label: ' &nbsp; &nbsp; Single Subject',
-				filter: function () {
-					return personHas($(this), 'Emphases', 'Single Subject');
-				}
-			},
-			{
-				label: ' &nbsp; &nbsp; Special Education Credential',
-				filter: function () {
-					return personHas($(this), 'Emphases', 'Special Education Credential');
-				}
-			},
-			{
-				label: ' &nbsp; &nbsp; Science/Math Initiative',
-				filter: function () {
-					return personHas($(this), 'Emphases', 'Science/Math Initiative');
-				}
+		$.each([{
+			label: '-- Show All --',
+			filter: function () {
+				return true;
 			}
-		], function () {
+		}, {
+			label: 'Department of Counseling, Clinical & School Psychology',
+			filter: function () {
+				return personHas($(this), 'Departments', 'CCSP');
+			}
+		}, {
+			label: ' &nbsp; &nbsp; Clinical Psychology',
+			filter: function () {
+				return personHas($(this), 'Emphases', 'Clinical Psychology');
+			}
+		}, {
+			label: ' &nbsp; &nbsp; School Psychology Credential',
+			filter: function () {
+				return personHas($(this), 'Emphases', 'School Psychology Credential');
+			}
+		}, {
+			label: ' &nbsp; &nbsp; Counseling Psychology',
+			filter: function () {
+				return personHas($(this), 'Emphases', 'Counseling Psychology');
+			}
+		}, {
+			label: 'Department of Education',
+			filter: function () {
+				return personHas($(this), 'Departments', 'EDUC');
+			}
+		}, {
+			label: ' &nbsp; &nbsp; Child and Adolescent Development',
+			filter: function () {
+				return personHas($(this), 'Emphases', 'Child and Adolescent Development');
+			}
+		}, {
+			label: ' &nbsp; &nbsp; Cultural Perspectives &amp; Comparative Education',
+			filter: function () {
+				return personHas($(this), 'Emphases', 'Cultural Perspectives & Comparative Education');
+			}
+		}, {
+			label: ' &nbsp; &nbsp; Educational Leadership and Organizations',
+			filter: function () {
+				return personHas($(this), 'Emphases', 'Educational Leadership and Organizations');
+			}
+		}, {
+			label: ' &nbsp; &nbsp; Joint Doctoral Program in Educational Leadership',
+			filter: function () {
+				return personHas($(this), 'Emphases', 'Joint Doctoral Program in Educational Leadership');
+			}
+		}, {
+			label: ' &nbsp; &nbsp; Research Methodology',
+			filter: function () {
+				return personHas($(this), 'Emphases', 'Research Methodology');
+			}
+		}, {
+			label: ' &nbsp; &nbsp; Special Education, Disabilities &amp; Risk Studies',
+			filter: function () {
+				return personHas($(this), 'Emphases', 'Special Education, Disabilities & Risk Studies');
+			}
+		}, {
+			label: ' &nbsp; &nbsp; Teaching &amp; Learning',
+			filter: function () {
+				return personHas($(this), 'Emphases', 'Teaching & Learning');
+			}
+		}, {
+			label: 'Teacher Education Program',
+			filter: function () {
+				return personHas($(this), 'Departments', 'TEP');
+			}
+		}, {
+			label: ' &nbsp; &nbsp; Multiple Subject',
+			filter: function () {
+				return personHas($(this), 'Emphases', 'Multiple Subject');
+			}
+		}, {
+			label: ' &nbsp; &nbsp; Single Subject',
+			filter: function () {
+				return personHas($(this), 'Emphases', 'Single Subject');
+			}
+		}, {
+			label: ' &nbsp; &nbsp; Special Education Credential',
+			filter: function () {
+				return personHas($(this), 'Emphases', 'Special Education Credential');
+			}
+		}, {
+			label: ' &nbsp; &nbsp; Science/Math Initiative',
+			filter: function () {
+				return personHas($(this), 'Emphases', 'Science/Math Initiative');
+			}
+		}], function () {
 
 			// Attach the filter function to the <option> object and append the
 			// <option> to the <select>
 			filter.append(
-				$('<option>' + this.label + '</option>').data('filter', this.filter)
-			);
+			$('<option>' + this.label + '</option>').data('filter', this.filter));
 		});
 
 		// Insert the filter before the tables
-        $('#formFilter').append(form);
+		$('#formFilter').append(form);
 
 		/* When an option is selected, move all of the rows into the hidden table,
 		 * then bring back the ones that match the filter defined by the option.
@@ -165,13 +145,13 @@
 
 			if (func) {
 				// Move all people back into the hiddenPeople section
-                //hiddenPeople.append(people.find('.person'));
-                hidden_people.append(people_senate.find('.person'));
-                hidden_people.append(people_lacts.find('.person'));
-                hidden_people.append(people_researchers.find('.person'));
-                
-                //create list based selection filter
-                var filtered = hidden_people.find('.person').filter(func).mergeSort(function (left, right) {
+				//hiddenPeople.append(people.find('.person'));
+				hidden_people.append(people_senate.find('.person'));
+				hidden_people.append(people_lacts.find('.person'));
+				hidden_people.append(people_researchers.find('.person'));
+
+				//create list based selection filter
+				var filtered = hidden_people.find('.person').filter(func).mergeSort(function (left, right) {
 					left = $(left).find('h3 .surname').text();
 					right = $(right).find('h3 .surname').text();
 					if (left < right) {
@@ -182,11 +162,17 @@
 						return 1;
 					}
 				});
-                
+
 				//people.append(filtered);
-                people_senate.append(filtered.filter(function() {return personHas($(this), 'Category', 'Academic Senate Faculty')}));
-                people_lacts.append(filtered.filter(function() {return personHas($(this), 'Category', 'Lecturer-Academic Coordinator-Teacher Supervisor')}));
-                people_researchers.append(filtered.filter(function() {return personHas($(this), 'Category', 'Researcher')}));
+				people_senate.append(filtered.filter(function () {
+					return personHas($(this), 'Category', 'Academic Senate Faculty')
+				}));
+				people_lacts.append(filtered.filter(function () {
+					return personHas($(this), 'Category', 'Lecturer-Academic Coordinator-Teacher Supervisor')
+				}));
+				people_researchers.append(filtered.filter(function () {
+					return personHas($(this), 'Category', 'Researcher')
+				}));
 			}
 		});
 	}
@@ -195,7 +181,7 @@
 
 		select: [
 			'profile.id', // needed for serialization
-			'first_name',
+		'first_name',
 			'last_name',
 			'display_name',
 			'profile.title',
@@ -205,8 +191,7 @@
 			'emphasis_type_3.name as emphasis3',
 			'department_1.acronym as department1',
 			'department_2.acronym as department2',
-			'profile.faculty_listing_category'
-		].join(','),
+			'profile.faculty_listing_category'].join(','),
 
 		from: [
 			'profile',
@@ -215,8 +200,7 @@
 			'emphasis_type_2 on emphasis.emphasis_type_id_2 = emphasis_type_2.id',
 			'emphasis_type_3 on emphasis.emphasis_type_id_3 = emphasis_type_3.id',
 			'department_1 on profile.department1_id = department_1.id',
-			'department_2 on profile.department2_id = department_2.id'
-		].join(' left join '),
+			'department_2 on profile.department2_id = department_2.id'].join(' left join '),
 
 		where: [
 			"profile.active = 'yes'" //and profile.faculty_listing_category = 'Academic Senate Faculty'"
@@ -227,9 +211,9 @@
 	}, function () {
 
 		hidden_people = $('<div class="hidden">');
-        people_senate = $('<div class="facultyListing">');
-        people_lacts = $('<div class="facultyListing">');
-        people_researchers = $('<div class="facultyListing">');
+		people_senate = $('<div class="facultyListing">');
+		people_lacts = $('<div class="facultyListing">');
+		people_researchers = $('<div class="facultyListing">');
 
 		hidden_people.data('sort', function () {
 
@@ -246,8 +230,7 @@
 			// way to say "letters only". Below, we disable JSLint scrutiny of
 			// regular expressions for just that line.
 			/*jslint regexp: true */
-			pic = $(IMG
-				.replace('%s', (this.first_name + this.last_name).toLowerCase().replace(/[^a-z]/g, ''))
+			pic = $(IMG.replace('%s', (this.first_name + this.last_name).toLowerCase().replace(/[^a-z]/g, ''))
 				.replace('%s', this.working_title)
 				.replace('%s', this.first_name)
 				.replace('%s', this.last_name));
@@ -258,20 +241,18 @@
 				this.src = 'http://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/faculty-placeholder.gif'
 			});
 
-			if(this.display_name === undefined){
-				name = $(NAME
-					.replace('%s', link)
+			if (this.display_name === undefined) {
+				name = $(NAME.replace('%s', link)
 					.replace('%s', this.first_name)
 					.replace('%s', this.last_name));
-			}else{
-				name = $(NAME
-					.replace('%s', link)
+			} else {
+				name = $(NAME.replace('%s', link)
 					.replace('%s', this.display_name)
 					.replace('%s', this.last_name));
 			}
-			if(this.working_title === undefined){
+			if (this.working_title === undefined) {
 				work_title = $('<h4>' + this.title + '</h4>');
-			}else{
+			} else {
 				work_title = $('<h4>' + this.working_title + '</h4>');
 			}
 
@@ -285,11 +266,7 @@
 				event.stopPropagation();
 
 				// If this was a middle mouse button or Shift or Command click, open in a new window
-				if (event.button === 1 ||
-						(event.button === 0 &&
-						(event.metaKey === true ||
-							event.ctrlKey === true ||
-							event.shiftKey === true))) {
+				if (event.button === 1 || (event.button === 0 && (event.metaKey === true || event.ctrlKey === true || event.shiftKey === true))) {
 					window.open(href);
 					return false;
 				} else {
@@ -302,21 +279,20 @@
 
 			person.data('Emphases', [this.emphasis1, this.emphasis2, this.emphasis3].join('; '));
 
-            person.data('Category', this.faculty_listing_category);
+			person.data('Category', this.faculty_listing_category);
 
 		});
 
 
 		$(function () {
 			//$('#facultyListing').replaceWith(people.attr('id', 'facultyListing'));
-            $('#facultyListingSenate').replaceWith(people_senate.attr('id', 'facultyListingSenate'));
-            $('#facultyListingLACTS').replaceWith(people_lacts.attr('id', 'facultyListingLACTS'));
-            $('#facultyListingResearchers').replaceWith(people_researchers.attr('id', 'facultyListingResearchers'));
+			$('#facultyListingSenate').replaceWith(people_senate.attr('id', 'facultyListingSenate'));
+			$('#facultyListingLACTS').replaceWith(people_lacts.attr('id', 'facultyListingLACTS'));
+			$('#facultyListingResearchers').replaceWith(people_researchers.attr('id', 'facultyListingResearchers'));
 			addFilter();
-            $('#friFilter').change();
+			$('#friFilter').change();
 
 		});
 
 	});
 }(jQuery));
-
