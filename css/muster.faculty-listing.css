@@ -69,6 +69,19 @@
 	opacity: 0.2;
 }
 
+
+.facultyListing #facultyListingLACTS .person {
+	margin: 0;
+	padding: 2px;
+	height: auto;
+	width: auto;
+	cursor: pointer;
+}
+
+.facultyListing #facultyListingLACTS img {
+	display: none;
+}
+
 .centerColumnContent {
 	padding-bottom:2em;
 }
