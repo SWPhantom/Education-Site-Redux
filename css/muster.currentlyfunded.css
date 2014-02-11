@@ -76,12 +76,12 @@
 
 /*Taken from http://cdn-4.psndealer.com/e2/dealersite/images/sort_arrow_up.png*/
 #currentlyFunded .sorted {
-	background: url("http://education.ucsb.edu/drupal7/sites/default/files/main_images/contracts_grants/sort_arrow_up.png") right center no-repeat;
+	background: url("https://education.ucsb.edu/drupal7/sites/default/files/main_images/contracts_grants/sort_arrow_up.png") right center no-repeat;
 }
 
 /*Taken from http://cdn-4.psndealer.com/e2/dealersite/images/sort_arrow_down.png*/
 #currentlyFunded .rsorted {
-	background: url("http://education.ucsb.edu/drupal7/sites/default/files/main_images/contracts_grants/sort_arrow_down.png") right center no-repeat;
+	background: url("https://education.ucsb.edu/drupal7/sites/default/files/main_images/contracts_grants/sort_arrow_down.png") right center no-repeat;
 }
 
 #currentlyFunded td[colspan=2] {

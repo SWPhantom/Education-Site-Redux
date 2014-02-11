@@ -17,8 +17,8 @@
 
 	var person, query, queries,
 		$window = $(window),
-		VITAE_PATH = 'http://education.ucsb.edu/drupal7/sites/default/files/faculty_vitae/%s.pdf',
-		IMG = '<img src="http://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/%s.jpg" alt="%s %s %s"/>', 
+		VITAE_PATH = 'https://education.ucsb.edu/drupal7/sites/default/files/faculty_vitae/%s.pdf',
+		IMG = '<img src="https://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/%s.jpg" alt="%s %s %s"/>', 
 		args = {};
 
 	// add trim method to String prototype if it doesn't already exist (IE<9)
@@ -392,7 +392,7 @@
 
 		// Show a place holder if the image doesn't exist
 		pic.bind('error', function () {
-			this.src = 'http://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/faculty-placeholder.gif';
+			this.src = 'https://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/faculty-placeholder.gif';
 		});
 
 		column.append(pic);
