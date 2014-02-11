@@ -76,3 +76,7 @@
 #centerColumnContent {
 	padding-bottom:2em;
 }
+
+.hidden {
+    display:none;
+}

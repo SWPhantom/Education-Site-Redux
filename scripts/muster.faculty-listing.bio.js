@@ -402,7 +402,9 @@
 			$('#musterPictureContent').append(column.children());
 		});
 
-		$('dt').click(function(e){
+
+	//Taken from http://stackoverflow.com/questions/4478122/jquery-expand-collapse-all-dt-tags-in-definition-list-dl
+	$('dt').click(function(e){
 		// All dt elements after this dt element until the next dt element
 		// Will be hidden or shown depending on it's current visibility
 		$(this).nextUntil('dt').toggle();
