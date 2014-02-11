@@ -32,7 +32,7 @@
 	box-shadow: none;
 }
 
-.field-items.even > h2 {
+.field-item.even > h2 {
 	margin: 0px;
 }
 
