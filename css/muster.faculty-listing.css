@@ -64,10 +64,14 @@
 #facultyListingLACTS.facultyListing .person {
 	display: block;
 	height: auto;
-	width: auto%;
+	width: 90%;
 	margin: none;
 	float: left;
 	padding: none;
+}
+
+#facultyListingResearchers.facultyListing .person:nth-child(odd) {
+	background-color: #eee;
 }
 
 #facultyListingLACTS.facultyListing img {
@@ -87,10 +91,18 @@
 #facultyListingResearchers.facultyListing .person {
 	display: block;
 	height: auto;
-	width: auto;
+	width: 90%;
 	margin: none;
 	float: left;
 	padding: none;
+}
+
+#facultyListingResearchers.facultyListing .person:nth-child(odd) {
+	background-color: #eee;
+}
+
+#facultyListingResearchers.facultyListing img {
+	display: none;
 }
 
 #facultyListingResearchers.facultyListing h3, #facultyListingResearchers.facultyListing h4 {
@@ -101,10 +113,6 @@
 
 #facultyListingResearchers.facultyListing h4:before {
 	content: "- "
-}
-
-#facultyListingResearchers.facultyListing img {
-	display: none;
 }
 
 .centerColumnContent {
