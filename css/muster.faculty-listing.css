@@ -22,10 +22,7 @@
 #facultyListing .person {
 	float: left;
 	margin: 1em;
-/*	border: 1px solid #999;*/
-/*	border-radius: 7px;*/
 	padding: 2px;
-	/*box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);*/
 	height: 240px;
 	width: 12em;
 	cursor: pointer;

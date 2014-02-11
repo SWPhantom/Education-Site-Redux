@@ -13,7 +13,10 @@
 
 	'use strict';
 
-	var people,
+	var hidden_people,
+        people_senate,
+        people_lacts,
+        people_researchers,
 		LINK = "/research-faculty/bio?first=%s&last=%s",
 		NAME = '<h3><a href="%s">%s <span class=surname>%s</span></a></h3>',
 		IMG = '<img src="http://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/%s.jpg" alt="%s %s %s"/>';
@@ -26,7 +29,7 @@
 	function addFilter() {
 
 		var filter,
-			hiddenPeople = $('<div>'), // A place to keep the rows that "hide" from the table
+			//hiddenPeople = $('<div>'), // A place to keep the rows that "hide" from the table
 			form = $('<form><label for=friFilter>Filter by department and emphasis: <select id=friFilter></select></label></form>');
 
 		filter = form.find('select');
@@ -149,8 +152,8 @@
 			);
 		});
 
-		// Insert the filter before the table
-		people.prepend(form);
+		// Insert the filter before the tables
+        $('#formFilter').append(form);
 
 		/* When an option is selected, move all of the rows into the hidden table,
 		 * then bring back the ones that match the filter defined by the option.
@@ -161,8 +164,14 @@
 			var func = filter.find('option:selected').data('filter');
 
 			if (func) {
-				hiddenPeople.append(people.find('.person'));
-				people.append(hiddenPeople.find('.person').filter(func).mergeSort(function (left, right) {
+				// Move all people back into the hiddenPeople section
+                //hiddenPeople.append(people.find('.person'));
+                hidden_people.append(people_senate.find('.person'));
+                hidden_people.append(people_lacts.find('.person'));
+                hidden_people.append(people_researchers.find('.person'));
+                
+                //create list based selection filter
+                var filtered = hidden_people.find('.person').filter(func).mergeSort(function (left, right) {
 					left = $(left).find('h3 .surname').text();
 					right = $(right).find('h3 .surname').text();
 					if (left < right) {
@@ -172,7 +181,12 @@
 					} else {
 						return 1;
 					}
-				}));
+				});
+                
+				//people.append(filtered);
+                people_senate.append(filtered.filter(function() {return personHas($(this), 'Category', 'Academic Senate Faculty')}));
+                people_lacts.append(filtered.filter(function() {return personHas($(this), 'Category', 'Lecturer-Academic Coordinator-Teacher Supervisor')}));
+                people_researchers.append(filtered.filter(function() {return personHas($(this), 'Category', 'Researcher')}));
 			}
 		});
 	}
@@ -212,9 +226,12 @@
 
 	}, function () {
 
-		people = $('<div>');
+		hidden_people = $('<div class="hidden">');
+        people_senate = $('<div class="facultyListing">');
+        people_lacts = $('<div class="facultyListing">');
+        people_researchers = $('<div class="facultyListing">');
 
-		people.data('sort', function () {
+		hidden_people.data('sort', function () {
 
 		});
 
@@ -257,6 +274,7 @@
 			}else{
 				work_title = $('<h4>' + this.working_title + '</h4>');
 			}
+
 			// insert picture into link before text
 			name.find('a').prepend(pic);
 
@@ -278,18 +296,24 @@
 					location.href = href;
 				}
 			});
-			people.append(person);
+			hidden_people.append(person);
 
 			person.data('Departments', [this.department1, this.department2].join('; '));
 
 			person.data('Emphases', [this.emphasis1, this.emphasis2, this.emphasis3].join('; '));
 
+            person.data('Category', this.faculty_listing_category);
+
 		});
 
 
 		$(function () {
-			$('#facultyListing').replaceWith(people.attr('id', 'facultyListing'));
+			//$('#facultyListing').replaceWith(people.attr('id', 'facultyListing'));
+            $('#facultyListingSenate').replaceWith(people_senate.attr('id', 'facultyListingSenate'));
+            $('#facultyListingLACTS').replaceWith(people_lacts.attr('id', 'facultyListingLACTS'));
+            $('#facultyListingResearchers').replaceWith(people_researchers.attr('id', 'facultyListingResearchers'));
 			addFilter();
+            $('#friFilter').change();
 
 		});
 
