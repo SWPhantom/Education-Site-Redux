@@ -87,6 +87,10 @@
 	text-align: left;
 }
 
+#facultyListingLACTS.facultyListing h4:before {
+	content: "- "
+}
+
 #facultyListingResearchers.facultyListing .person {
 	display: block;
 	height: auto;
@@ -98,6 +102,10 @@
 #facultyListingResearchers.facultyListing h3, #facultyListingResearchers.facultyListing h4 {
 	display: inline;
 	text-align: left;
+}
+
+#facultyListingResearchers.facultyListing h4:before {
+	content: "- "
 }
 
 #facultyListingResearchers.facultyListing img {
