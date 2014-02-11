@@ -71,6 +71,7 @@
 
 
 #facultyListingLACTS.facultyListing .person {
+	display: block;
 	margin: 0;
 	padding: 2px;
 	height: auto;
@@ -79,6 +80,19 @@
 }
 
 #facultyListingLACTS.facultyListing img {
+	display: none;
+}
+
+#facultyListingResearchers.facultyListing .person {
+	display: block;
+	margin: 0;
+	padding: 2px;
+	height: auto;
+	width: auto;
+	cursor: pointer;
+}
+
+#facultyListingResaechers.facultyListing img {
 	display: none;
 }
 
