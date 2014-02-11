@@ -250,7 +250,7 @@
 				});
 
 				// "Expand/collapse all" link before the table
-				link.toggle(function (event) {
+				/*link.toggle(function (event) {
 					event.preventDefault();
 					titles.each(function () {
 						$(this).data('open').call(this, false);
@@ -261,7 +261,7 @@
 						$(this).data('close').call(this, false);
 					});
 				});
-				table.before(link);
+				table.before(link);*/
 
 				// Click first header to sort by PI / Co-PI
 				table.find('th:first').click();
