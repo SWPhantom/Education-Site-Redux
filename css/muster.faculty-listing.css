@@ -32,6 +32,10 @@
 	box-shadow: none;
 }
 
+.facultyListing h2 {
+	margin: 0px;
+}
+
 .facultyListing h3, .facultyListing h4 {
 	margin: 1em 0 0 0;
 	text-align: center;
@@ -65,12 +69,11 @@
 	display: block;
 	height: auto;
 	width: 90%;
-	margin: none;
+	margin: 1px;
 	float: left;
-	padding: none;
 }
 
-#facultyListingResearchers.facultyListing .person:nth-child(odd) {
+#facultyListingLACTS.facultyListing .person:nth-child(odd) {
 	background-color: #eee;
 }
 
@@ -92,9 +95,8 @@
 	display: block;
 	height: auto;
 	width: 90%;
-	margin: none;
+	margin: 1px;
 	float: left;
-	padding: none;
 }
 
 #facultyListingResearchers.facultyListing .person:nth-child(odd) {
