@@ -19,7 +19,7 @@
 	people_researchers,
 	LINK = "/research-faculty/bio?first=%s&last=%s",
 		NAME = '<h3><a href="%s">%s <span class=surname>%s</span></a></h3>',
-		IMG = '<img src="http://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/%s.jpg" alt="%s %s %s"/>';
+		IMG = '<img src="https://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/%s.jpg" alt="%s %s %s"/>';
 
 	function personHas(person, field, value) {
 		return person.data(field).match(value) !== null;
@@ -238,7 +238,7 @@
 
 			// Show a place holder if the image doesn't exist
 			pic.bind('error', function () {
-				this.src = 'http://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/faculty-placeholder.gif'
+				this.src = 'https://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/faculty-placeholder.gif'
 			});
 
 			if (this.display_name === undefined) {
