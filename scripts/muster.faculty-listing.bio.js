@@ -404,7 +404,7 @@
 
 
 	//Taken from http://stackoverflow.com/questions/4478122/jquery-expand-collapse-all-dt-tags-in-definition-list-dl
-	$('dt').click(function(e){
+	$('dt').on("click", function(e){
 		// All dt elements after this dt element until the next dt element
 		// Will be hidden or shown depending on it's current visibility
 		$(this).nextUntil('dt').toggle();
@@ -412,10 +412,10 @@
 
 	// Hide all dd elements to start with
 	//$('dd').hide();
-	$('#Affiliations:').trigger();
-	$('#Awards and Honors:').trigger();
-	$('#Lectures and Papers Presented:').trigger();
-	$('#Publications:').trigger();
+	$('#Affiliations:').trigger("click");
+	$('#Awards and Honors:').trigger("click");
+	$('#Lectures and Papers Presented:').trigger("click");
+	$('#Publications:').trigger("click");
 	}
 
 
