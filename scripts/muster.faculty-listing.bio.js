@@ -138,7 +138,7 @@
 		}
 
 		// if we made it this far, there is data to be displayed so set the dt
-		dl.append($('<dt id="' + label + '">').append(label));
+		dl.append($('<dt>').append(label));
 
 		$.each(value, function () {
 			if (this) {
@@ -147,9 +147,9 @@
 					// XXX Have to handle strings separately because IE is awful. Can't
 					// use $('<dd>').text(this) because IE is really, really awful.
 					//
-					dl.append($('<dd>' + this + '</dd>'));
+					dl.append($('<dd id="' + label + '">' + this + '</dd>'));
 				} else {
-					dl.append($('<dd>').append(this));
+					dl.append($('<dd id="' + label + '">').append(this));
 				}
 			}
 		});
