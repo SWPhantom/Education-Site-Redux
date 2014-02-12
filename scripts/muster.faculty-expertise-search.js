@@ -225,7 +225,7 @@
 				' faculty member, please contact',
 				' Communications Coordinator George Yatchisin at ',
 				' <a href="mailto:george@education.ucsb.edu">george@education.ucsb.edu</a>', 
-				' or 805-893-5789.'
+				' or 805-893-5789.</br>'
 			].join('')
 		)
 	);
