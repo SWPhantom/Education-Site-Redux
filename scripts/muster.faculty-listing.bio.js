@@ -412,10 +412,10 @@
 
 	// Hide all dd elements to start with
 	//$('dd').hide();
-	$("dd#Affiliations:").hide();
-	$("dd#Awards and Honors:").hide();
-	$("dd#Lectures and Papers Presented:").hide();
-	$("dd#Publications:").hide();
+	$('#Affiliations:').hide();
+	$('#Awards and Honors:').hide();
+	$('#Lectures and Papers Presented:').hide();
+	$('#Publications:').hide();
 	}
 
 
