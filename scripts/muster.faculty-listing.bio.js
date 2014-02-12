@@ -280,7 +280,7 @@
 				[departmentLink(person.department1), departmentLink(person.department2)]
 			],
 			[
-				' ',
+				'\n',
 				[
 					link(person.personal_website, '-Personal Website'),
 					link(person.group_research_website, '-Group Research Website'),
