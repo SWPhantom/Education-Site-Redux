@@ -26,11 +26,11 @@ header > h1#page-title {
 }
 
 #musterInfoContent>dl>dd#Dept {
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
-#musterInfoContent>dl>dd#Sites:last-child {
-	margin-bottom: 10px;
+#musterInfoContent>dl>dd#Room {
+	margin-top: 5px;
 }
 
 #musterDataContent dt {
