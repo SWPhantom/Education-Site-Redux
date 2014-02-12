@@ -138,7 +138,7 @@
 		}
 
 		// if we made it this far, there is data to be displayed so set the dt
-		dl.append($('<dt>').append(label));
+		dl.append($('<dt id="' + label + '>').append(label));
 
 		$.each(value, function () {
 			if (this) {
@@ -404,7 +404,7 @@
 
 
 	//Taken from http://stackoverflow.com/questions/4478122/jquery-expand-collapse-all-dt-tags-in-definition-list-dl
-	$('dt').on("click", function(e){
+	$('dt').click(function(e){
 		// All dt elements after this dt element until the next dt element
 		// Will be hidden or shown depending on it's current visibility
 		$(this).nextUntil('dt').toggle();
@@ -412,10 +412,10 @@
 
 	// Hide all dd elements to start with
 	//$('dd').hide();
-	$('#Affiliations:').trigger("click");
-	$('#Awards and Honors:').trigger("click");
-	$('#Lectures and Papers Presented:').trigger("click");
-	$('#Publications:').trigger("click");
+	$('dt#Affiliations:').trigger(click);
+	$('dt#Awards and Honors:').trigger(click);
+	$('dt#Lectures and Papers Presented:').trigger(click);
+	$('dt#Publications:').trigger(click);
 	}
 
 
