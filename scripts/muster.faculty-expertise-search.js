@@ -221,7 +221,7 @@
 	fieldset.append(
 		$('<p>').html(
 			[
-				'If you cannot find what you are looking for or wish to interview a',
+				'<br>If you cannot find what you are looking for or wish to interview a',
 				' faculty member, please contact',
 				' Communications Coordinator George Yatchisin at ',
 				' <a href="mailto:george@education.ucsb.edu">george@education.ucsb.edu</a>', 
