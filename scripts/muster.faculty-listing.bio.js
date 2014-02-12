@@ -138,6 +138,7 @@
 		}
 
 		// if we made it this far, there is data to be displayed so set the dt
+		console.log(typeof label);
 		dl.append($('<dt id="' + label.toString() +'">').text(label));
 
 		$.each(value, function () {
