@@ -20,6 +20,10 @@
 	cursor: pointer;
 }
 
+#facultyInstructorCodes tr+td:nth-child(even) {
+	width:100%;
+}
+
 /*Taken from http://cdn-4.psndealer.com/e2/dealersite/images/sort_arrow_up.png*/
 #facultyInstructorCodes .sorted {
 	background: url("https://education.ucsb.edu/drupal7/sites/default/files/main_images/contracts_grants/sort_arrow_up.png") right center no-repeat;
