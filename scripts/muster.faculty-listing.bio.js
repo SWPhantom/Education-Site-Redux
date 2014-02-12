@@ -138,8 +138,7 @@
 		}
 
 		// if we made it this far, there is data to be displayed so set the dt
-		console.log(label);
-		dl.append($('<dt id="' + label.toString() +'">').text(label));
+		dl.append($('<dt id="' + label + '">'));
 
 		$.each(value, function () {
 			if (this) {
@@ -265,23 +264,23 @@
 		$.each(
 		[
 			[
-				'',
+				'Name',
 				[
 					'<b>' + altNameTitle(person.display_name, person.first_name) + ' '+ person.last_name + '</b>'
 				]
 			],
 			[
-				'',
+				'Title',
 				[
 					'-' + altNameTitle(person.working_title, person.title)
 				]
 			],
 			[
-				'',
+				'Dept',
 				[departmentLink(person.department1), departmentLink(person.department2)]
 			],
 			[
-				'',
+				'Sites',
 				[
 					link(person.personal_website, '-Personal Website'),
 					link(person.group_research_website, '-Group Research Website'),
@@ -289,15 +288,15 @@
 				]
 			],
 			[
-				'',
+				'Room',
 				person.office_room_number
 			],
 			[
-				'',
+				'Phone',
 				phone(person.phone)
 			],
 			[
-				'',
+				'Email',
 				link('mailto:' + person.email, person.email)
 			]
 		], function () {
