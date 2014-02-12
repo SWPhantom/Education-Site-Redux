@@ -412,10 +412,10 @@
 
 	// Hide all dd elements to start with
 	//$('dd').hide();
-	$('dt#Affiliations:').trigger(click);
-	$('dt#Awards and Honors:').trigger(click);
-	$('dt#Lectures and Papers Presented:').trigger(click);
-	$('dt#Publications:').trigger(click);
+	$('dt#Affiliations:').trigger();
+	$('dt#Awards and Honors:').trigger();
+	$('dt#Lectures and Papers Presented:').trigger();
+	$('dt#Publications:').trigger();
 	}
 
 
