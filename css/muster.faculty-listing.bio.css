@@ -21,11 +21,11 @@ header > h1#page-title {
 	margin-left: 0;
 }
 
-#musterInfoContent #Dept = {
+#musterInfoContent dt#Dept = {
 	margin-bottom: 5px;
 }
 
-#musterInfoContent #Sites = {
+#musterInfoContent dt#Sites = {
 	margin-bottom: 5px;
 }
 
