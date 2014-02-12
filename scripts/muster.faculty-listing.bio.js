@@ -409,13 +409,6 @@
 		// Will be hidden or shown depending on it's current visibility
 		$(this).nextUntil('dt').toggle();
 	});
-
-	// Hide all dd elements to start with
-	//$('dd').hide();
-	$('#Affiliations:').toggle();
-	$('#Awards and Honors:').hide();
-	$('#Lectures and Papers Presented:').hide();
-	$('#Publications:').hide();
 	}
 
 

@@ -59,7 +59,7 @@ header > h1#page-title {
 }
 
 #musterDataContent dd {
-	padding-bottom: 3px;
+	padding-bottom: 5px;
 }
 
 #musterDataContent dd:nth-child(odd) {
