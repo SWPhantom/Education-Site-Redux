@@ -25,11 +25,11 @@ header > h1#page-title {
 	margin-left: 0;
 }
 
-#musterInfoContent>dl>dd#Dept = {
+#musterInfoContent>dl>dd[id="Dept"] = {
 	margin-bottom: 10px;
 }
 
-#musterInfoContent>dl>dd#Sites:last-child = {
+#musterInfoContent>dl>dd[id="Sites"]:last-child = {
 	margin-bottom: 10px;
 }
 
