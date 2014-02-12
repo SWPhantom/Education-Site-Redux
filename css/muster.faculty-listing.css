@@ -20,7 +20,7 @@
 
 .facultyListing .person {
 	float: left;
-	margin: 1em;
+	margin: .5em;
 	padding: 2px;
 	height: 240px;
 	width: 12em;
