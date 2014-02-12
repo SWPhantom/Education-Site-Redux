@@ -1,13 +1,9 @@
-#facultyInstructorCodes table{
-	margin-left: 50px;
-}
-
 #facultyInstructorCodes table a, #facultyInstructorCodes h3 {
 	cursor: pointer;
 	margin: 0;
 }
 
-#facultyInstructorCodes tbody td>dl {
+#facultyInstructorCodes tbody td dl {
 	border-top: 1px solid #ddd;
 	margin-top: 0;
 }
@@ -20,8 +16,12 @@
 	cursor: pointer;
 }
 
+#facultyInstructorCodes tr td:nth-child(odd) {
+	width: 20%;
+}
+
 #facultyInstructorCodes tr td:nth-child(even) {
-	width:100%;
+	width: 80%;
 }
 
 /*Taken from http://cdn-4.psndealer.com/e2/dealersite/images/sort_arrow_up.png*/
