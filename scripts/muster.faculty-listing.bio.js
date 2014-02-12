@@ -147,9 +147,9 @@
 					// XXX Have to handle strings separately because IE is awful. Can't
 					// use $('<dd>').text(this) because IE is really, really awful.
 					//
-					dl.append($('<dd>' + this + '</dd>'));
+					dl.append($('<dd id ="' + this + '">' + this + '</dd>'));
 				} else {
-					dl.append($('<dd>').append(this));
+					dl.append($('<dd id ="' + this + '">').append(this));
 				}
 			}
 		});
@@ -280,7 +280,7 @@
 				[departmentLink(person.department1), departmentLink(person.department2)]
 			],
 			[
-				'\n',
+				'',
 				[
 					link(person.personal_website, '-Personal Website'),
 					link(person.group_research_website, '-Group Research Website'),
