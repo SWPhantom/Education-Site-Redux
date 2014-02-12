@@ -20,7 +20,7 @@
 	cursor: pointer;
 }
 
-#facultyInstructorCodes tr+td:nth-child(even) {
+#facultyInstructorCodes tr td:nth-child(even) {
 	width:100%;
 }
 
