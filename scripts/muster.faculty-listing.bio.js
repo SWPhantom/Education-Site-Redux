@@ -411,11 +411,7 @@
 	});
 
 	// Hide all dd elements to start with
-	//$('dd').hide();
-	$('#Affiliations:').hide();
-	$('#Awards and Honors:').hide();
-	$('#Lectures and Papers Presented:').hide();
-	$('#Publications:').hide();
+	$('dd').hide();
 	}
 
 
