@@ -3,11 +3,6 @@
 	margin: 0;
 }
 
-#facultyInstructorCodes tbody td dl {
-	border-top: 1px solid #ddd;
-	margin-top: 0;
-}
-
 #facultyInstructorCodes dt {
 	font-weight: bold;
 }
@@ -17,11 +12,11 @@
 }
 
 #facultyInstructorCodes tr td:nth-child(odd) {
-	width: 20%;
+	width: 25%;
 }
 
 #facultyInstructorCodes tr td:nth-child(even) {
-	width: 80%;
+	width: 75%;
 }
 
 /*Taken from http://cdn-4.psndealer.com/e2/dealersite/images/sort_arrow_up.png*/
