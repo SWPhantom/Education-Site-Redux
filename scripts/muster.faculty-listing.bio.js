@@ -138,7 +138,7 @@
 		}
 
 		// if we made it this far, there is data to be displayed so set the dt
-		dl.append($('<dt id="' + label + '>').append(label));
+		dl.append($('<dt>').append(label));
 
 		$.each(value, function () {
 			if (this) {
@@ -412,10 +412,6 @@
 
 	// Hide all dd elements to start with
 	//$('dd').hide();
-/*	$('dt#Affiliations:').trigger();
-	$('dt#Awards and Honors:').trigger();
-	$('dt#Lectures and Papers Presented:').trigger();
-	$('dt#Publications:').trigger();*/
 	}
 
 
