@@ -21,16 +21,16 @@ header > h1#page-title {
 	display: none;
 }
 
-#musterInfoContent dt#Dept = {
-	margin-bottom: 5px;
-}
-
-#musterInfoContent dt#Sites = {
-	margin-bottom: 5px;
-}
-
 #musterInfoContent dd {
 	margin-left: 0;
+}
+
+#musterInfoContent dd#Dept = {
+	margin-bottom: 10px;
+}
+
+#musterInfoContent dd#Sites = {
+	margin-bottom: 10px;
 }
 
 #musterDataContent dt {
