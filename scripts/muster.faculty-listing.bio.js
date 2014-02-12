@@ -407,11 +407,15 @@
 	$('dt').click(function(e){
 		// All dt elements after this dt element until the next dt element
 		// Will be hidden or shown depending on it's current visibility
-		$(this).nextUntil('dt').toggle();
+		$(this).nextUntil('dt').toggle("slow");
 	});
 
 	// Hide all dd elements to start with
-	$('dd').hide();
+	//$('dd').hide();
+	$('#Affiliations:').hide();
+	$('#Awards and Honors:').hide();
+	$('#Lectures and Papers Presented:').hide();
+	$('#Publications:').hide();
 	}
 
 
