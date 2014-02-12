@@ -32,6 +32,10 @@
 	box-shadow: none;
 }
 
+.formFilter > form {
+	margin-bottom: .83em;
+}
+
 .field-item.even > h2 {
 	margin: 0px;
 }
