@@ -19,8 +19,16 @@ header > h1#page-title {
 
 #musterInfoContent dd {
 	margin-left: 0;
-	/*font-size: 11.5px;*/
 }
+
+#musterInfoContent #Title = {
+	margin-bottom: 2px;
+}
+
+#musterInfoContent #Sites = {
+	margin-bottom: 2px;
+}
+
 
 #musterDataContent dt {
 	font-family:'Open Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;

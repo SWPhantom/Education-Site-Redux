@@ -91,13 +91,13 @@
 	function departmentLink(dept) {
 		var depts = {
 
-				'-Department of Education':
+				'Department of Education':
 					'/education',
 
-				'-Department of Counseling, Clinical & School Psychology':
+				'Department of Counseling, Clinical & School Psychology':
 					'/ccsp',
 
-				'-Teacher Education Program':
+				'Teacher Education Program':
 					'/tep'
 			};
 
@@ -272,7 +272,7 @@
 			[
 				'Title',
 				[
-					'-' + altNameTitle(person.working_title, person.title)
+					altNameTitle(person.working_title, person.title)
 				]
 			],
 			[
@@ -282,9 +282,9 @@
 			[
 				'Sites',
 				[
-					link(person.personal_website, '-Personal Website'),
-					link(person.group_research_website, '-Group Research Website'),
-					link(person.vitae, '-Vitae')
+					link(person.personal_website, 'Personal Website'),
+					link(person.group_research_website, 'Group Research Website'),
+					link(person.vitae, 'Vitae')
 				]
 			],
 			[
