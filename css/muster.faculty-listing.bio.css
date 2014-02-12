@@ -17,18 +17,21 @@ header > h1#page-title {
 	height: auto;
 }
 
+#musterInfoContent dt {
+	display: none;
+}
+
+#musterInfoContent dt#Dept = {
+	margin-bottom: 5px;
+}
+
+#musterInfoContent dt#Sites = {
+	margin-bottom: 5px;
+}
+
 #musterInfoContent dd {
 	margin-left: 0;
 }
-
-dt#Dept = {
-	margin-bottom: 5px;
-}
-
-dt#Sites = {
-	margin-bottom: 5px;
-}
-
 
 #musterDataContent dt {
 	font-family:'Open Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
