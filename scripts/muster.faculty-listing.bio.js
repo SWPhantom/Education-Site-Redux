@@ -138,7 +138,7 @@
 		}
 
 		// if we made it this far, there is data to be displayed so set the dt
-		dl.append($('<dt id="' + label +'">').text(label));
+		dl.append($('<dt id="' + text(label) +'">').text(label));
 
 		$.each(value, function () {
 			if (this) {
