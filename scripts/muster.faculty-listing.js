@@ -181,7 +181,7 @@
 
 		select: [
 			'profile.id', // needed for serialization
-		'first_name',
+			'first_name',
 			'last_name',
 			'display_name',
 			'profile.title',

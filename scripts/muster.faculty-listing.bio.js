@@ -326,10 +326,17 @@
 		}else{
 			tempTitle = person.working_title;
 		}
-		column
-			.append($('<h1 class=header></h1>').text(tempName + ' ' + person.last_name))
-			.append($('<h3 class=Paltino14pxBlackBold></h3>').text(tempTitle + ', ' + person.education))
-			.append(dl);
+		if(person.education === undefined){
+			column
+				.append($('<h1 class=header></h1>').text(tempName + ' ' + person.last_name))
+				.append($('<h3 class=Paltino14pxBlackBold></h3>').text(tempTitle + ', ' + person.education))
+				.append(dl);
+			}else{
+				column
+				.append($('<h1 class=header></h1>').text(tempName + ' ' + person.last_name))
+				.append($('<h3 class=Paltino14pxBlackBold></h3>').text(tempTitle))
+				.append(dl);
+			}
 
 		$.each(
 
@@ -521,10 +528,12 @@
 			limit: '1'
 		}, function () {
 			var ed = this.results[0];
-			person.education = '%d (%i)'.replace(/%d/, ed.degree).replace(/%i/, ed.institution);
+			if(ed !== undefined){
+				person.education = '%d (%i)'.replace(/%d/, ed.degree).replace(/%i/, ed.institution);
+			}
 			$window.trigger('education');
 		});
-
+		
 		// departments
 		//
 		// Since there's no join table, we have to run a query per department. to
