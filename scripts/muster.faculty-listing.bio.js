@@ -329,12 +329,12 @@
 		if(person.education === undefined){
 			column
 				.append($('<h1 class=header></h1>').text(tempName + ' ' + person.last_name))
-				.append($('<h3 class=Paltino14pxBlackBold></h3>').text(tempTitle + ', ' + person.education))
+				.append($('<h3 class=Paltino14pxBlackBold></h3>').text(tempTitle))
 				.append(dl);
 			}else{
 				column
 				.append($('<h1 class=header></h1>').text(tempName + ' ' + person.last_name))
-				.append($('<h3 class=Paltino14pxBlackBold></h3>').text(tempTitle))
+				.append($('<h3 class=Paltino14pxBlackBold></h3>').text(tempTitle + ', ' + person.education))
 				.append(dl);
 			}
 
