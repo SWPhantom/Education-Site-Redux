@@ -9,6 +9,7 @@
 /*jslint browser: true, indent: 2 */
 /*global jQuery, muster */
 
+
 (function ($) {
 
 	'use strict';
