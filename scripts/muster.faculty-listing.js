@@ -238,7 +238,7 @@
 
 			// Show a place holder if the image doesn't exist
 			pic.bind('error', function () {
-				this.src = 'https://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/faculty-placeholder.gif'
+				this.src = 'https://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/faculty-placeholder.png'
 			});
 
 			if (this.display_name === undefined) {
