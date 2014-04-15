@@ -35,8 +35,7 @@ header > h1#page-title {
 
 #musterDataContent dt {
         width: 250px;
-        transition: background-color 0.5s ease; 
-        transition: color 0.25s, ease;
+        transition: background-color 0.5s ease;
         font-family:'Open Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
         background-color: rgb(231, 244, 253);
         cursor: pointer;
