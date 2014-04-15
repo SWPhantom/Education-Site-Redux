@@ -34,29 +34,30 @@ header > h1#page-title {
 }
 
 #musterDataContent dt {
-	font-family:'Open Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	background: url("https://education.ucsb.edu/drupal7/sites/default/files/main_images/background-light.png");
-	background-size: 250px 38px;
-	background-repeat:no-repeat;
-	cursor: pointer;
-	font-size: 15px;
-	height: 21px;
-	padding: 8px 10px 8px 15px;
-	border-bottom: 1px solid #fff;
+        width: 250px;
+        transition: background-color 0.5s ease; 
+        transition: color 0.25s, ease;
+        font-family:'Open Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        background-color: rgb(231, 244, 253);
+        cursor: pointer;
+        font-size: 15px;
+        height: 21px;
+        padding: 8px 10px 8px 15px;
+        border-bottom: 1px solid #fff;
 }
 
 #musterDataContent dt:hover {
-	font-family:'Open Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	background: url("https://education.ucsb.edu/drupal7/sites/default/files/main_images/background-dark.png");
-	background-size: 250px 38px;
-	background-repeat:no-repeat;
-	color: #fff;
-	cursor: pointer;
-	font-size: 15px;
-	height: 21px;
-	padding: 8px 10px 8px 15px;
-	border-bottom: 1px solid #fff;
+        width: 250px;
+        font-family:'Open Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        background-color: rgb(101, 172, 227);
+        color: #fff;
+        cursor: pointer;
+        font-size: 15px;
+        height: 21px;
+        padding: 8px 10px 8px 15px;
+        border-bottom: 1px solid #fff;
 }
+
 
 #musterDataContent dd {
 	padding-bottom: 5px;
