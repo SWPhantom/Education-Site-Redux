@@ -118,7 +118,7 @@
 }
 
 #facultyListingResearchers.facultyListing h4:before {
-	content: "- "
+	content: " "
 }
 
 .centerColumnContent {
