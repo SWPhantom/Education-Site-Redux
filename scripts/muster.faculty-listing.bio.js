@@ -147,9 +147,9 @@
 					// XXX Have to handle strings separately because IE is awful. Can't
 					// use $('<dd>').text(this) because IE is really, really awful.
 					//
-					dl.append($('<dd id="' + label + '">' + this + '</dd>'));
+					dl.append($('<dd class="' + label.replace(/\s+/g, '-').replace(":", "") + '">' + this + '</dd>'));
 				} else {
-					dl.append($('<dd id="' + label + '">').append(this));
+					dl.append($('<dd class="' + label.replace(/\s+/g, '-').replace(":", "") + '">').append(this));
 				}
 			}
 		});
@@ -414,11 +414,14 @@
 	$('dt').click(function(e){
 		// All dt elements after this dt element until the next dt element
 		// Will be hidden or shown depending on it's current visibility
-		$(this).nextUntil('dt').toggle();
+		$(this).nextUntil('dt').toggle(500);
 	});
 
 	// Hide all dd elements to start with
-	//$('dd').hide();
+	$('.Awards-and-Honors').hide();
+	$('.Affiliations').hide();
+	$('.Lectures-and-Papers-Presented').hide();
+	$('.Publications').hide();
 	}
 
 
