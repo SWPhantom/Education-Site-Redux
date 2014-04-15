@@ -177,31 +177,37 @@
 		$('<select>').append(
 			$('<option>')
 		)
-	);
+	).append(
+        $('<p>')
+    );
 	fieldset.append(name);
 
 
 	// department search form
 	//
-	dept = $('<label>').text('By Department').append(
+	dept = $('<label>').text('\nBy Department').append(
 		$('<br>')
 	).append(
 		$('<select>').append(
 			$('<option>')
 		)
-	);
+	).append(
+        $('<p>')
+    );
 	fieldset.append(dept);
 
 
 	// specialization search form
 	//
-	spec = $('<label>').text('By Specialization').append(
+	spec = $('<label>').text('\nBy Specialization').append(
 		$('<br>')
 	).append(
 		$('<select>').append(
 			$('<option>')
 		)
-	);
+	).append(
+        $('<p>')
+    );
 	fieldset.append(spec);
 
 
