@@ -25,6 +25,23 @@
         return person.data(field).match(value) !== null
     }
 
+    /* Function checkHeading
+     *
+     * Checks the number of children a div with a specified name has.
+     * If there are no children, hide the h2 element with the same
+     * name (+ "H2") as the div.
+     *
+     */
+    function checkHeading(name) {
+        var peopleList = document.getElementById(name);
+        var peopleHeading = document.getElementById(name + "H2");
+        if (peopleList.childNodes.length === 0) {
+            $(peopleHeading).hide();
+        } else {
+            $(peopleHeading).show();
+        }
+    }
+
     // Add a <select> which allows you to filter the results displayed
     function addFilter() {
 
@@ -173,6 +190,12 @@
                 people_researchers.append(filtered.filter(function () {
                     return personHas($(this), 'Category', 'Researcher')
                 }));
+
+                //Show/hide headings depending on whether the divs are populated.
+                checkHeading("facultyListingSenate");
+                checkHeading("facultyListingLACTS");
+                checkHeading("facultyListingResearchers");
+
             }
         });
     }
@@ -203,7 +226,7 @@
             'department_2 on profile.department2_id = department_2.id'].join(' left join '),
 
         where: [
-            "profile.active = 'yes'" //and profile.faculty_listing_category = 'Academic Senate Faculty'"
+            "profile.active = 'yes'"
         ].join(' and '),
 
         order: 'last_name asc'
@@ -215,9 +238,7 @@
         people_lacts = $('<div class="facultyListing">');
         people_researchers = $('<div class="facultyListing">');
 
-        hidden_people.data('sort', function () {
-
-        });
+        hidden_people.data('sort', function () {});
 
         $.each(this.serializeBy('id').results, function () {
             var person, pic, name, link, work_title;
@@ -260,9 +281,7 @@
             name.find('a').prepend(pic);
 
             person.append(name).append(work_title).click(function (event) {
-
                 var href = $(this).find('a').attr('href');
-
                 event.stopPropagation();
 
                 // If this was a middle mouse button or Shift or Command click, open in a new window
@@ -273,16 +292,12 @@
                     location.href = href;
                 }
             });
+
             hidden_people.append(person);
-
             person.data('Departments', [this.department1, this.department2].join('; '));
-
             person.data('Emphases', [this.emphasis1, this.emphasis2, this.emphasis3].join('; '));
-
             person.data('Category', this.faculty_listing_category);
-
         });
-
 
         $(function () {
             //$('#facultyListing').replaceWith(people.attr('id', 'facultyListing'));
@@ -291,8 +306,6 @@
             $('#facultyListingResearchers').replaceWith(people_researchers.attr('id', 'facultyListingResearchers'));
             addFilter();
             $('#friFilter').change();
-
         });
-
     });
 }(jQuery));
