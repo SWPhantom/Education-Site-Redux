@@ -204,7 +204,7 @@
 
         select: [
             'profile.id', // needed for serialization
-        'first_name',
+            'first_name',
             'last_name',
             'display_name',
             'profile.title',
@@ -241,26 +241,31 @@
         hidden_people.data('sort', function () {});
 
         $.each(this.serializeBy('id').results, function () {
-            var person, pic, name, link, work_title;
+            var person, pic, name, link, work_title, isASF;
 
             person = $('<div class=person></div>');
 
             link = LINK.replace('%s', this.first_name).replace('%s', this.last_name);
-
-            // JSLint doesn't like negations in regexp, but it really is the clearest
-            // way to say "letters only". Below, we disable JSLint scrutiny of
-            // regular expressions for just that line.
-            /*jslint regexp: true */
-            pic = $(IMG.replace('%s', (this.first_name + this.last_name).toLowerCase().replace(/[^a-z]/g, ''))
-                .replace('%s', this.working_title)
-                .replace('%s', this.first_name)
-                .replace('%s', this.last_name));
-            /*jslint regexp: false */
-
-            // Show a place holder if the image doesn't exist
-            pic.bind('error', function () {
-                this.src = 'https://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/faculty-placeholder.gif'
-            });
+            
+            //Boolean that is used to see if the picture even needs to be GETed.
+            isASF = this.faculty_listing_category === 'Academic Senate Faculty';
+            
+            if(isASF){
+                // JSLint doesn't like negations in regexp, but it really is the clearest
+                // way to say "letters only". Below, we disable JSLint scrutiny of
+                // regular expressions for just that line.
+                /*jslint regexp: true */
+                pic = $(IMG.replace('%s', (this.first_name + this.last_name).toLowerCase().replace(/[^a-z]/g, ''))
+                    .replace('%s', this.working_title)
+                    .replace('%s', this.first_name)
+                    .replace('%s', this.last_name));
+                /*jslint regexp: false */
+    
+                // Show a place holder if the image doesn't exist
+                pic.bind('error', function () {
+                    this.src = 'https://education.ucsb.edu/drupal7/sites/default/files/faculty_photos/faculty-placeholder.gif'
+                });
+            }
 
             if (this.display_name === undefined) {
                 name = $(NAME.replace('%s', link)
@@ -277,9 +282,9 @@
                 work_title = $('<h4>' + this.working_title + '</h4>');
             }
 
-            // insert picture into link before text
-            name.find('a').prepend(pic);
-
+            if(isASF){ //Insert picture into link before text.
+                name.find('a').prepend(pic);
+            }
             person.append(name).append(work_title).click(function (event) {
                 var href = $(this).find('a').attr('href');
                 event.stopPropagation();
