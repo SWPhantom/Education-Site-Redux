@@ -15,7 +15,6 @@
 
 	var table, tbody; // point to the generated table
 
-
 	/*
 	 * Return true if the column contains the value. If column is null, all
 	 * columns are checked.
@@ -93,49 +92,49 @@
 				filter: function () {
 					return cellContains($(this), 'Departments', 'EDUC');
 				}
-			},
+			}, 
 			{
-				label: ' &nbsp; &nbsp; Child and Adolescent Development',
+				label: ' &nbsp; &nbsp; Culture and Development',
 				filter: function () {
-					return cellContains($(this), 'Emphases', 'Child and Adolescent Development');
+					return cellContains($(this), 'Emphases', 'Culture and Development');
 				}
-			},
+			}, 
 			{
-				label: ' &nbsp; &nbsp; Cultural Perspectives &amp; Comparative Education',
+				label: ' &nbsp; &nbsp; Language and Literacy',
 				filter: function () {
-					return cellContains($(this), 'Emphases', 'Cultural Perspectives & Comparative Education');
+					return cellContains($(this), 'Emphases', 'Language and Literacy');
 				}
-			},
+			}, 
 			{
-				label: ' &nbsp; &nbsp; Educational Leadership and Organizations',
+				label: ' &nbsp; &nbsp; Learning, Culture and Technology Studies',
 				filter: function () {
-					return cellContains($(this), 'Emphases', 'Educational Leadership and Organizations');
+					return cellContains($(this), 'Emphases', 'Learning, Culture and Technology Studies');
 				}
-			},
+			}, 
 			{
-				label: ' &nbsp; &nbsp; Joint Doctoral Program in Educational Leadership',
+				label: ' &nbsp; &nbsp; Policy, Leadership and Research Methods',
 				filter: function () {
-					return cellContains($(this), 'Emphases', 'Joint Doctoral Program in Educational Leadership');
+					return cellContains($(this), 'Emphases', 'Policy, Leadership and Research Methods');
 				}
-			},
+			}, 
 			{
-				label: ' &nbsp; &nbsp; Research Methodology',
+				label: ' &nbsp; &nbsp; Science and Mathematics Education',
 				filter: function () {
-					return cellContains($(this), 'Emphases', 'Research Methodology');
+					return cellContains($(this), 'Emphases', 'Science and Mathematics Education');
 				}
-			},
+			}, 
 			{
 				label: ' &nbsp; &nbsp; Special Education, Disabilities &amp; Risk Studies',
 				filter: function () {
 					return cellContains($(this), 'Emphases', 'Special Education, Disabilities & Risk Studies');
 				}
-			},
+			}, 
 			{
-				label: ' &nbsp; &nbsp; Teaching &amp; Learning',
+				label: ' &nbsp; &nbsp; Teacher Education and Professional Development',
 				filter: function () {
-					return cellContains($(this), 'Emphases', 'Teaching & Learning');
+					return cellContains($(this), 'Emphases', 'Teacher Education and Professional Development');
 				}
-			},
+			}, 
 			{
 				label: 'Teacher Education Program',
 				filter: function () {
@@ -198,9 +197,7 @@
 				window.adjustLayout();
 			}
 		});
-
 	}
-
 
 	muster('ggsedb').query({
 
@@ -286,6 +283,7 @@
 					]
 				],
 
+				//Populates <div id="facultyResearchInterests"></div>
 				'#facultyResearchInterests',
 
 				/* table post-processing callback
