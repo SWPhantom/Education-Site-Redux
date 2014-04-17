@@ -92,7 +92,7 @@
 }
 
 #facultyListingLACTS.facultyListing h4:before {
-	content: "- "
+	content: " "
 }
 
 #facultyListingResearchers.facultyListing .person {
