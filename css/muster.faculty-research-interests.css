@@ -12,8 +12,14 @@
 	font-weight: bold;
 }
 
-#facultyResearchInterests th {
+#facultyResearchInterests th:nth-child(1), th:nth-child(2) {
 	cursor: pointer;
+    width: 20%;
+}
+
+#facultyResearchInterests th:nth-child(3) {
+	cursor: pointer;
+    width: full;
 }
 
 /*Taken from http://cdn-4.psndealer.com/e2/dealersite/images/sort_arrow_up.png*/
