@@ -1,3 +1,11 @@
+#facultyResearchInterests th {
+	cursor: pointer;
+}
+
+#facultyResearchInterests tr {
+	width: 100%;
+}
+
 #facultyResearchInterests table a, #facultyResearchInterests h3 {
 	cursor: pointer;
 	margin: 0;
@@ -10,16 +18,6 @@
 
 #facultyResearchInterests dt {
 	font-weight: bold;
-}
-
-#facultyResearchInterests th:nth-child(1), th:nth-child(2) {
-	cursor: pointer;
-    width: 20%;
-}
-
-#facultyResearchInterests th:nth-child(3) {
-	cursor: pointer;
-    width: full;
 }
 
 /*Taken from http://cdn-4.psndealer.com/e2/dealersite/images/sort_arrow_up.png*/
