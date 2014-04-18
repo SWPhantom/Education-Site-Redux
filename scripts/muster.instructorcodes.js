@@ -59,6 +59,11 @@
 					return html.html(); // unwrap it
 				}
 			]
-		], '#facultyInstructorCodes') // Target container for table (<div id="currentlyFunded"></div>)
+		],
+		// target div: <div id="facultyInstructorCodes"></div>
+		'#facultyInstructorCodes',
+		function(){
+			$("th:first").click();
+		})
 	});
 }(jQuery));
