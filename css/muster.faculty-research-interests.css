@@ -2,7 +2,9 @@
 	cursor: pointer;
 }
 
-#facultyResearchInterests table>thead {
+#facultyResearchInterests table,
+#facultyResearchInterests thead,
+#facultyResearchInterests tr {
 	width: 100%;
 }
 
