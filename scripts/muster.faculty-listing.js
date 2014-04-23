@@ -50,11 +50,11 @@
 	function checkArgument() {
 		var delimiter = '?=';
 		initialArgument = (document.URL.split(delimiter)[1]);
-		if (initialArgument === 'ccsp') {
+		if (initialArgument.indexOf("ccsp") > -1) {
 			//Select "Department of Counsling..." from the dropdown.
 			$("#friFilter").val("Department of Counseling, Clinical & School Psychology");
 			$('#friFilter').change();
-		} else if (initialArgument === 'educ') {
+		} else if (initialArgument.indexOf("educ") > -1) {
 			//Select "Department of Education" from the dropdown.
 			$("#friFilter").val("Department of Education");
 			$('#friFilter').change();
