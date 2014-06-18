@@ -151,8 +151,6 @@
 					}
 				}
                 
-                console.log(names.substr(names.length - 1));
-                
 				return names.html();
 			}
 		}],
