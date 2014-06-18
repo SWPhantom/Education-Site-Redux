@@ -90,10 +90,7 @@
 			'PI / Co-PI',
 
 		function () {
-			console.log(this);
 			var i, len, names, last_name;
-
-
 			
 			//If there are multiple instances of a first or last name, an array
 			//is not created. Therefore, force all the deficient arrays to be
@@ -131,13 +128,16 @@
 				}
 
 				//Proceed with the appending process.
+                var counter = 0;
 				if (hasPI === true) { //There is one PI
 					names.append(bioLink(this.last_name[PILocation], this.first_name[PILocation]));
 					names.append(' / ');
+                    ++counter;
 					for (i = 0; i < this.pi_type.length; ++i) {
 						if (i !== PILocation) {
 							names.append(bioLink(this.last_name[i], this.first_name[i]));
-							if (i !== this.pi_type.length - 2) {
+                            ++counter;
+							if (counter !== this.pi_type.length) {
 								names.append(' / ');
 							}
 						}
@@ -145,7 +145,8 @@
 				} else { //Everyone is a Co-PI
 					for (i = 0; i < this.pi_type.length; ++i) {
 						names.append(bioLink(this.last_name[i], this.first_name[i]));
-						if (i !== this.pi_type.length - 2) {
+                        ++counter;
+						if (counter !== this.pi_type.length) {
 							names.append(' / ');
 						}
 					}
