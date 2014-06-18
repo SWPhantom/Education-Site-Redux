@@ -137,7 +137,7 @@
 					for (i = 0; i < this.pi_type.length; ++i) {
 						if (i !== PILocation) {
 							names.append(bioLink(this.last_name[i], this.first_name[i]));
-							if (i !== this.pi_type.length - 1) {
+							if (i !== this.pi_type.length - 2) {
 								names.append(' / ');
 							}
 						}
@@ -145,11 +145,14 @@
 				} else { //Everyone is a Co-PI
 					for (i = 0; i < this.pi_type.length; ++i) {
 						names.append(bioLink(this.last_name[i], this.first_name[i]));
-						if (i !== this.pi_type.length - 1) {
+						if (i !== this.pi_type.length - 2) {
 							names.append(' / ');
 						}
 					}
 				}
+                
+                console.log(names.substr(names.length - 1));
+                
 				return names.html();
 			}
 		}],
